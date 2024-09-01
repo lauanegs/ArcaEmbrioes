@@ -1,0 +1,148 @@
+/* src/App.css */
+
+/* Background geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F0F0F0; /* Cor de fundo principal */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1A154B; /* Cor da navbar */
+  padding: 15px;
+  color: #F0F0F0; /* Cor do texto na navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #F0F0F0; /* Cor dos links na navbar */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Banner */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: #1A154B; /* Cor do texto no banner */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 21, 75, 0.5); /* Fundo escurecido */
+  z-index: -1;
+}
+
+.banner h2 {
+  font-size: 48px;
+  margin: 0;
+  color: #F0F0F0; /* Texto em branco */
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #F0F0F0; /* Texto em branco */
+}
+
+.banner button {
+  background-color: #1A154B; /* Cor do botão */
+  color: #F0F0F0; /* Cor do texto no botão */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banner button:hover {
+  background-color: #171241; /* Cor do botão ao passar o mouse */
+}
+
+/* Content */
+.content {
+  padding: 50px 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #1A154B; /* Cor do título nas seções de conteúdo */
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: #666; /* Cor do texto nas seções de conteúdo */
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Services Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+.card h3 {
+  color: #1A154B;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #1A154B; /* Cor do rodapé */
+  padding: 20px;
+  text-align: center;
+  color: #F0F0F0; /* Cor do texto no rodapé */
+  margin-top: 50px;
+}

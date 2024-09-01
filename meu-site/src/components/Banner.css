@@ -1,0 +1,52 @@
+/* src/components/Banner.css */
+
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .banner button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .banner button:hover {
+    background-color: #45a049;
+  }
+  
