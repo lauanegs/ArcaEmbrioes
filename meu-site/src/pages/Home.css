@@ -1,0 +1,202 @@
+/* src/pages/Home.css */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .services-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1A154B;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: 1px solid #1A154B;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Remove background color */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .card svg {
+    margin-bottom: 10px;
+  }
+  
+  .structure {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .structure h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .structure-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1A154B;
+  }
+  
+  .structure-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .structure-card {
+    background-color: #FFFFFF;
+    border: 1px solid #1A154B;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .structure-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .structure-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-banner {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+    border-top: 1px solid #1A154B;
+  }
+  
+  .contact-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1A154B;
+  }
+  
+  .contact-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666666;
+  }
+  
+  .contact-buttons .btn {
+    background-color: #1A154B;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-buttons .btn:hover {
+    background-color: #333366;
+  }
+  
+  .advantages {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .advantages h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .advantages-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1A154B;
+  }
+  
+  .advantages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .advantage-row, .advantages-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .advantage-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .advantage-item div {
+    text-align: left;
+  }
+  
+  .advantage-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .advantage-item p {
+    font-size: 1rem;
+    color: #666666;
+  }
+  
+  /* src/pages/Home.css */
+
+.pride {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+  }
+  
+  .pride h2 {
+    font-size: 2rem;
+    color: #1A154B;
+    margin-bottom: 10px;
+  }
+  
+  .pride-subtitle {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .video-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  

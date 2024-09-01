@@ -1,35 +1,31 @@
-// src/components/Navbar.js
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../assets/logo.png';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
-function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+const Navbar = () => {
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo">Embriovita</div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav className="navbar">
+      <div className="logo">
+        <img src={logo} alt="Logo Arca Embriões" />
+      </div>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/sobre">Sobre Nós</Link></li>
+        <li><Link to="/equipe">Equipe</Link></li>
+        <li><Link to="/servicos">Serviços</Link></li>
+        <li><Link to="/contato">Contato</Link></li>
+      </ul>
+      <div className="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebook size={24} color="#FFFFFF" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={24} color="#FFFFFF" />
+        </a>
+      </div>
+    </nav>
   );
 }
 

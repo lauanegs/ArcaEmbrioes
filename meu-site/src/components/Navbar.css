@@ -1,46 +1,36 @@
-/* src/components/Navbar.css */
-
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #4CAF50;
-    padding: 15px 20px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s;
-    z-index: 1000;
-  }
-  
-  .navbar.scrolled {
-    background-color: #333;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin-left: 20px;
-  }
-  
-  .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .navbar ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1A154B;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #CCCCCC;
+}
+
+.social-icons a img {
+  height: 24px;
+  margin-left: 10px;
+}
