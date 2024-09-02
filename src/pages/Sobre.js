@@ -1,11 +1,17 @@
 import React from 'react';
+import BannerSobre from '../components/sobre/banner';
+import Texto from '../components/sobre/texto';
+import Valores from '../components/sobre/valores';
+import Missao from '../components/sobre/missao';
 
 const Sobre = () => {
   return (
-    <div>
-      <h1>Sobre Nós</h1>
-      <p>Informações sobre a empresa...</p>
-    </div>
+    <>
+    <BannerSobre/>
+    <Texto/>
+    <Valores/>
+    <Missao/>
+    </>
   );
 }
 

@@ -1,0 +1,29 @@
+.banner-sobre {
+    background-image: url('../../assets/fazenda.jpg');
+}
+
+.banner-sobre h1{
+    margin: 30px 160px;
+    padding: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.banner-sobre p{
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.banner-sobre button {
+    margin: 100px;
+    height: 48px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}

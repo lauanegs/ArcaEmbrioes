@@ -1,0 +1,16 @@
+.sim {
+    background-image: url('../../assets/laboratorio.png');
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around	;
+    margin: 150px 50px;
+}
+
+.texto p{
+    max-width: 620px;
+    text-align: left;
+    font-size: 24px;
+}

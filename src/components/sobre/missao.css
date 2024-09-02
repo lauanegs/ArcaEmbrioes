@@ -1,0 +1,22 @@
+.card-pai {
+    justify-content: center;
+    align-self: center;
+}
+
+.card-missao {
+    background-color: #1A154B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    max-width: 1200px;
+    margin: 50px;
+}
+
+.filho-card h1, p {
+    text-align: left;
+}
+
+.filho-card {
+    padding: 20px;
+}
