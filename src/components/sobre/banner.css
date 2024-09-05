@@ -1,23 +1,74 @@
 .banner-sobre {
     background-image: url('../../assets/fazenda.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; /* Usa toda a largura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/** RESPONSIVIDADE BANNER SOBRE **/
+
+/* Para telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    .banner-sobre {
+      background-size: cover;
+    }
+  }
+  
+  /* Para telas de desktop padrão (entre 992px e 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .banner-sobre {
+      background-size: cover;
+    }
+  }
+  
+  /* Para tablets (entre 768px e 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .banner-sobre {
+      background-size: cover;
+    }
+  }
+  
+  /* Para dispositivos móveis grandes (entre 576px e 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .banner-sobre {
+      background-size: cover;
+    }
+  }
+  
+  /* Para dispositivos móveis pequenos (até 575px) */
+  @media (max-width: 575px) {
+    .banner-sobre {
+      background-size: cover;
+      background-position: top center; /* Ajustar se necessário */
+    }
+  }
+
+/** FIM RESPONSIVIDADE BANNER SOBRE **/
+
 .banner-sobre h1{
-    margin: 30px 160px;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     color:white;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 5rem;
+    
 }
 
 .banner-sobre p{
-    margin: 10px;
-    font-size: 16px;
+    text-align: center;
+    font-size: 1rem;
     color: white;
 }
 
 .banner-sobre button {
-    margin: 100px;
+    margin: 1.2rem;
     height: 48px;
     width: 250px;
     background-color: transparent;
@@ -25,5 +76,5 @@
     border-radius: 12px;
     color: white;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
 }
