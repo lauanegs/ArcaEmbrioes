@@ -1,3 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede o scroll horizontal */
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box; /* Garante que padding e border não excedam o tamanho dos elementos */
+}
+
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #F0F0F0;

@@ -2,15 +2,46 @@
     background-image: url('../../assets/laboratorio.png');
 }
 
-.texto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around	;
-    margin: 150px 50px;
-}
-
 .texto p{
-    max-width: 620px;
-    text-align: left;
+    text-align: justify;
     font-size: 24px;
 }
+
+.texto-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Coloca texto e imagem ao lado, com espaço entre eles */
+    padding: 20px;
+  }
+  
+.texto {
+    flex: 1;
+    text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+  
+.imagem {
+    flex: 1;
+    max-width: 50%; /* Limita a largura da imagem em telas grandes */
+    padding: 0;
+}
+  
+  /* Para telas menores */
+  @media (max-width: 768px) {
+    .texto-container {
+      flex-direction: column; /* Coloca o texto e a imagem em coluna (um abaixo do outro) */
+      align-items: center; /* Centraliza o container do texto */
+    }
+  
+    .texto {
+      text-align: justify; /* Mantém o texto alinhado à esquerda */
+      margin-bottom: 20px; /* Adiciona espaço abaixo do texto antes da imagem */
+      padding: 5px;
+      width: 100%; /* Ocupa toda a largura disponível */
+    }
+  
+    .imagem {
+      width: 100%; /* Faz a imagem ocupar toda a largura da tela em dispositivos menores */
+      max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+    }
+  }
+  
