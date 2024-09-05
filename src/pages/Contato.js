@@ -1,11 +1,10 @@
 import React from 'react';
-
+import { BannerContato } from '../components/contato/banner';
 const Contato = () => {
   return (
-    <div>
-      <h1>Contato</h1>
-      <p>Informações de contato...</p>
-    </div>
+    <>
+      <BannerContato/>
+    </>
   );
 }
 
