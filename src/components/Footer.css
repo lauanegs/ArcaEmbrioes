@@ -1,26 +1,22 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Alinha itens ao topo */
   padding: 20px;
   background-color: #1A154B;
+  color: #FFFFFF; /* Define a cor do texto como branca */
   position: relative;
-  color: #FFFFFF;
+  overflow: hidden; /* Garante que nada saia da área definida */
 }
 
 .footer-left {
   flex: 1;
   padding: 20px;
-  background-color: #1A154B;
 }
 
-.footer-left h2 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.footer-left p {
-  margin: 5px 0;
+.footer-left h2, .footer-left p {
+  color: #FFFFFF; /* Define a cor do texto como branca */
+  margin: 0; /* Remove margens padrão */
 }
 
 .contact-info {
@@ -33,25 +29,25 @@
   margin-bottom: 10px;
 }
 
+.contact-item svg {
+  color: #FFFFFF; /* Cor dos ícones no footer-left */
+}
+
 .contact-item p {
   margin-left: 10px;
+  color: #FFFFFF; /* Define a cor do texto como branca */
 }
 
 .footer-right {
   flex: 1;
   padding: 20px;
   background-color: #FFFFFF;
-  color: #1A154B;
+  color: #1A154B; /* Cor do texto na parte direita */
   text-align: right;
 }
 
-.footer-right h2 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.footer-right p {
-  margin: 10px 0;
+.footer-right h2, .footer-right p {
+  color: #1A154B; /* Define a cor do texto como #1A154B */
 }
 
 .footer-right .btn {
@@ -61,6 +57,7 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  display: inline-block; /* Garante que o botão não tenha área extra */
 }
 
 .footer-right .btn:hover {

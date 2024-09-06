@@ -1,202 +1,294 @@
 /* src/pages/Home.css */
-.services {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .services h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .services-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #1A154B;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    border: 1px solid #1A154B;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: transparent; /* Remove background color */
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  
-  .card svg {
-    margin-bottom: 10px;
-  }
-  
-  .structure {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .structure h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .structure-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #1A154B;
-  }
-  
-  .structure-card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .structure-card {
-    background-color: #FFFFFF;
-    border: 1px solid #1A154B;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .structure-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .structure-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .contact-banner {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #F0F0F0;
-    border-top: 1px solid #1A154B;
-  }
-  
-  .contact-banner h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #1A154B;
-  }
-  
-  .contact-banner p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #666666;
-  }
-  
-  .contact-buttons .btn {
-    background-color: #1A154B;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-buttons .btn:hover {
-    background-color: #333366;
-  }
-  
-  .advantages {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .advantages h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .advantages-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #1A154B;
-  }
-  
-  .advantages-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .advantage-row, .advantages-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .advantage-item {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .advantage-item div {
-    text-align: left;
-  }
-  
-  .advantage-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .advantage-item p {
-    font-size: 1rem;
-    color: #666666;
-  }
-  
-  /* src/pages/Home.css */
+
+body {
+  background-color: #F0F0F0; /* Fundo da página */
+}
+
+.services, .structure, .contact-banner, .advantages, .pride {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2, .structure h2, .contact-banner h2, .advantages h2, .pride h2 {
+  font-size: 2rem;
+  color: #1A154B; /* Cor dos títulos */
+  margin-bottom: 10px;
+}
+
+.services-subtitle, .structure-subtitle, .contact-banner p, .advantages-subtitle, .pride-subtitle {
+  font-size: 1rem; /* Diminuir o tamanho da fonte dos subtítulos */
+  color: #1A154B; /* Cor dos subtítulos e textos */
+  margin-bottom: 20px; /* Diminuir o espaço abaixo dos subtítulos */
+  text-align: center; /* Centraliza os subtítulos */
+  max-width: 800px; /* Limita a largura da caixa de texto dos subtítulos */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px; /* Ajusta a largura para ser quadrada */
+  height: 200px; /* Ajusta a altura para ser quadrada */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF; /* Cor de fundo dos cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card svg {
+  font-size: 20px; /* Reduz o tamanho dos ícones */
+  margin-bottom: 10px;
+  color: #1A154B; /* Cor dos ícones */
+}
+
+.card h3 {
+  font-size: 0.8rem; /* Reduz o tamanho da fonte dos títulos */
+  margin-top: 5px; /* Ajusta o espaço acima do título */
+  color: #1A154B; /* Cor dos títulos */
+}
+
+.structure-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.structure-card {
+  border-radius: 8px;
+  padding: 15px;
+  width: 210px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF; /* Cor de fundo dos cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.structure-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block; /* Garante que a imagem seja centralizada */
+}
+
+.structure-card h3 {
+  font-size: 1.2rem; /* Tamanho da fonte dos títulos dos cards da estrutura */
+  color: #1A154B; /* Cor dos títulos */
+  margin-bottom: 5px;
+}
+
+.structure-description {
+  font-size: 0.9rem; /* Ajusta o tamanho da fonte das descrições */
+  color: #666666; /* Cor das descrições */
+  margin-top: 3; /* Remove a margem superior para um layout mais compacto */
+}
+
+.contact-banner {
+  position: relative;
+  padding: 20px 40px; /* Ajuste o padding para um melhor ajuste visual */
+  background: url('../assets/banner.jpg') no-repeat center center; /* Adiciona a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir o espaço */
+  color: #FFFFFF; /* Cor do texto */
+  height: 50vh; /* Altura fixa do banner, metade da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* Garante que nada saia da área do banner */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição escura com sombra */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.contact-banner > div {
+  max-width: 60%; /* Limita a largura do container para não ocupar toda a largura do banner */
+}
+
+.contact-banner h2 {
+  font-size: 2.5rem; /* Ajusta o tamanho da fonte do título */
+  margin-bottom: 10px;
+  color: #FFFFFF; /* Cor do título */
+}
+
+.contact-banner p {
+  font-size: 1.2rem; /* Ajusta o tamanho da fonte do texto */
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Cor do texto */
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+.contact-buttons .btn {
+  background-color: #1A154B;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-buttons .btn:hover {
+  background-color: #333366;
+}
+
+.advantages-container {
+  flex-direction: row; /* Alinha as vantagens horizontalmente */
+  justify-content: center;
+  gap: 30px; /* Aumenta o espaço entre as vantagens */
+  flex-wrap: wrap;
+}
+
+.advantage-row, .advantages-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  text-align: center;
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+  gap: 15px; /* Espaço entre o ícone e o texto */
+  width: 300px; /* Ajuste a largura dos itens das vantagens */
+}
+
+.advantage-item svg {
+  background-color: rgba(26, 21, 75, 0.5); /* Cor de fundo dos ícones com 50% de opacidade */
+  border-radius: 50%;
+  padding: 15px; /* Aumenta o padding para melhor visibilidade dos ícones */
+  color: #FFFFFF; /* Cor dos ícones */
+  width: 80px; /* Ajusta a largura dos ícones */
+  height: 80px; /* Ajusta a altura dos ícones */
+}
+
+.advantage-item div {
+  text-align: left; /* Alinha o texto à esquerda para ficar ao lado do ícone */
+}
+
+.advantage-item h3 {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte dos títulos das vantagens */
+  margin-bottom: 5px; /* Ajusta o espaço abaixo do título */
+}
+
+.advantage-item p {
+  font-size: 1rem; /* Aumenta o tamanho da fonte dos textos das vantagens */
+  color: #666666;
+}
 
 .pride {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #F0F0F0;
-  }
-  
-  .pride h2 {
-    font-size: 2rem;
-    color: #1A154B;
-    margin-bottom: 10px;
-  }
-  
-  .pride-subtitle {
-    font-size: 1.25rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .video-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .video-container iframe {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  background-color: #F0F0F0; /* Cor de fundo da seção de orgulho */
+}
+
+.pride h2 {
+  color: #1A154B; /* Cor dos títulos */
+}
+
+.pride-subtitle {
+  font-size: 1rem; /* Ajuste o tamanho da fonte para ser consistente com outros subtítulos */
+  color: #1A154B; /* Cor do subtítulo */
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o subtítulo */
+  max-width: 800px; /* Limita a largura da caixa de texto */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adiciona um espaçamento acima do vídeo */
+  padding: 20px;
+}
+
+.video-container iframe {
+  width: 70%; /* Aumenta o tamanho do vídeo */
+  height: 350px; /* Ajusta a altura do vídeo */
+  max-width: 50%;
+  border: none; /* Remove a borda do iframe */
+  border-radius: 10px;
+}
+
+/* Novo estilo para o banner de introdução */
+.intro-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px; /* Aumenta o padding lateral */
+  background-color: #f0f0f0; /* Cor de fundo do banner */
+  position: relative; /* Permite o posicionamento absoluto do card */
+}
+
+.intro-text {
+  max-width: 40%; /* Limita a largura do texto */
+}
+
+.intro-text h1 {
+  font-size: 2.5rem; /* Tamanho do título */
+  color: #1A154B; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.2rem; /* Tamanho do subtítulo */
+  color: #333; /* Cor do subtítulo */
+  margin-bottom: 20px;
+}
+
+.intro-text .btn {
+  background-color: #1A154B;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.intro-text .btn:hover {
+  background-color: #333366;
+}
+
+.intro-image {
+  max-width: 50%; /* Limita a largura da imagem */
+  position: relative; /* Permite o posicionamento absoluto do card */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.year-card {
+  background-color: #FFFFFF; /* Cor de fundo do card */
+  color: #1A154B; /* Cor do texto do card */
+  padding: 20px; /* Aumenta o padding interno do card */
+  border-radius: 8px;
+  margin-top: 20px; /* Aumenta a margem superior para mais espaçamento */
+  text-align: center;
+  position: absolute; /* Posiciona o card na parte inferior da imagem */
+  bottom: 20px; /* Aumenta a margem inferior para mais espaçamento */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o alinhamento horizontal */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+
