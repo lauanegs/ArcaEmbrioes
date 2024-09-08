@@ -1,0 +1,30 @@
+
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title{
+    width: 75%;
+}
+
+.title {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.container-subtitle{
+    width: 35%;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+}

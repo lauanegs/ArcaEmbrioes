@@ -1,0 +1,27 @@
+.container-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.nome-contato {
+    padding: 20px;
+}
