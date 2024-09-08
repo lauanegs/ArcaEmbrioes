@@ -5,26 +5,40 @@ import './Home.css'; // Importar o CSS específico para a Home
 import incubadoraImg from '../assets/incubadora.jpg'; // Verifique o caminho do arquivo
 import vitrificacaoImg from '../assets/vitrificacao.jpg';
 import parceriasImg from '../assets/parcerias.jpg';
+import logoImg from '../assets/2021.jpg'; // Verifique o caminho do arquivo
 import { FaFlask, FaSyringe, FaTransgender, FaSeedling, FaHeartbeat, FaLeaf, FaStar } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <div>
       <Banner />
+      <section className="intro-banner">
+        <div className="intro-text">
+          <h1>A melhor empresa para cuidar do seu material genético!</h1>
+          <p>Contamos com equipamentos modernos, em um local totalmente esterilizado permitindo os melhores resultados.</p>
+          <a href="#orcamento" className="btn">Faça um orçamento</a>
+        </div>
+        <div className="intro-image">
+          <img src={logoImg} alt="Logo" />
+          <div className="year-card">
+            Desde 2021
+          </div>
+        </div>
+      </section>
       <section className="services">
         <h2>O que nós fazemos</h2>
         <p className="services-subtitle">A Arca Embriões permite acelerar o melhoramento genético de seus parceiros por meio da técnica de fertilização in vitro em bovinos!</p>
         <div className="card-container">
           <div className="card">
-            <FaFlask size={40} color="#1A154B" />
+            <FaFlask size={35} color="#1A154B" />
             <h3>Produção in vitro</h3>
           </div>
           <div className="card">
-            <FaSyringe size={40} color="#1A154B" />
+            <FaSyringe size={35} color="#1A154B" />
             <h3>Aspiração folicular</h3>
           </div>
           <div className="card">
-            <FaTransgender size={40} color="#1A154B" />
+            <FaTransgender size={35} color="#1A154B" />
             <h3>Transferência de embriões</h3>
           </div>
         </div>
@@ -36,14 +50,17 @@ const Home = () => {
           <div className="structure-card">
             <img src={incubadoraImg} alt="Incubadora" />
             <h3>Incubadora</h3>
+            <p className="structure-description">Nossa incubadora possui tecnologia de ponta para garantir o ambiente ideal para o desenvolvimento dos embriões.</p>
           </div>
           <div className="structure-card">
             <img src={vitrificacaoImg} alt="Vitrificação" />
             <h3>Vitrificação</h3>
+            <p className="structure-description">Utilizamos técnicas avançadas de vitrificação para preservar a qualidade dos embriões durante o armazenamento.</p>
           </div>
           <div className="structure-card">
             <img src={parceriasImg} alt="Parcerias" />
             <h3>Parcerias</h3>
+            <p className="structure-description">Trabalhamos em parceria com instituições renomadas para garantir a excelência no tratamento e manejo dos embriões.</p>
           </div>
         </div>
       </section>
@@ -61,14 +78,14 @@ const Home = () => {
         <div className="advantages-container">
           <div className="advantage-row">
             <div className="advantage-item">
-              <FaSeedling size={40} color="#1A154B" />
+              <FaSeedling size={40} color="#ffff" />
               <div className="advantage-text">
                 <h3>Vantagem 1</h3>
                 <p>Descrição da vantagem 1.</p>
               </div>
             </div>
             <div className="advantage-item">
-              <FaHeartbeat size={40} color="#1A154B" />
+              <FaHeartbeat size={40} color="#ffff" />
               <div className="advantage-text">
                 <h3>Vantagem 2</h3>
                 <p>Descrição da vantagem 2.</p>
@@ -77,14 +94,14 @@ const Home = () => {
           </div>
           <div className="advantages-row">
             <div className="advantage-item">
-              <FaLeaf size={40} color="#1A154B" />
+              <FaLeaf size={40} color="#ffff" />
               <div className="advantage-text">
                 <h3>Vantagem 3</h3>
                 <p>Descrição da vantagem 3.</p>
               </div>
             </div>
             <div className="advantage-item">
-              <FaStar size={40} color="#1A154B" />
+              <FaStar size={40} color="#ffff" />
               <div className="advantage-text">
                 <h3>Vantagem 4</h3>
                 <p>Descrição da vantagem 4.</p>
