@@ -9,6 +9,10 @@
   overflow: hidden; /* Garante que nada saia da área definida */
 }
 
+.footer-left, .footer-right {
+  z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
+}
+
 .footer-left {
   flex: 1;
   padding: 20px;
@@ -38,43 +42,61 @@
   color: #FFFFFF; /* Define a cor do texto como branca */
 }
 
+/* Estilos para a parte direita do rodapé */
 .footer-right {
   flex: 1;
   padding: 20px;
-  background-color: #FFFFFF;
-  color: #1A154B; /* Cor do texto na parte direita */
+  color: #ffffff; /* Cor do texto na parte direita */
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha o texto e o botão à direita */
+  justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
 }
 
-.footer-right h2, .footer-right p {
-  color: #1A154B; /* Define a cor do texto como #1A154B */
+.footer-right h2 {
+  color: #ffffff; /* Cor do título */
+  font-size: 1.5rem; /* Tamanho da fonte do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.footer-right p {
+  color: #ffffff; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte do texto */
+  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
 }
 
 .footer-right .btn {
   background-color: #1A154B;
   color: #FFFFFF;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Aumenta o padding para um botão mais visível */
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  display: inline-block; /* Garante que o botão não tenha área extra */
+  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
+  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
+  display: inline-block;
+  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+  font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
 }
 
 .footer-right .btn:hover {
   background-color: #333366;
+  transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
 }
 
+/* Container da imagem de fundo */
 .footer-banner {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 50%;
-  height: 100%;
+  width: 40%; /* Ajusta a largura da imagem */
+  height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
   overflow: hidden;
+  z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */
 }
 
 .footer-banner img {
   width: 100%;
-  height: auto;
-  opacity: 0.3;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+  opacity: 0.2; /* Reduz a opacidade da imagem para não competir com o texto */
 }
