@@ -1,0 +1,69 @@
+.banner {
+  background-image: url('../../assets/bannerp.png'); /* Defina a imagem de fundo desejada */
+  background-size: cover; /* Faz a imagem cobrir todo o banner */
+  background-position: center; /* Centraliza a imagem no banner */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  height: 100vh; /* Altura do banner é 100% da altura da tela */
+  width: 100%; /* Usa toda a largura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Centraliza o texto dentro do banner */
+  color: white; /* Cor do texto */
+}
+
+.banner h1 {
+  font-size: 5rem; /* Tamanho do título */
+  font-weight: bold; /* Deixa o título em negrito */
+  margin: 0; /* Remove margens padrão */
+}
+
+.banner p {
+  font-size: 1rem; /* Tamanho do texto */
+  color: white; /* Cor do texto */
+}
+
+.banner button {
+  margin: 1.2rem;
+  height: 48px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer; /* Cursor de ponteiro para o botão */
+}
+
+/* Media queries para melhorar a responsividade */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 3rem; /* Tamanho do título para telas menores */
+  }
+
+  .banner p {
+    font-size: 0.9rem; /* Tamanho do texto para telas menores */
+  }
+
+  .banner button {
+    width: 200px; /* Ajusta a largura do botão para telas menores */
+    font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 2rem; /* Tamanho do título para telas muito pequenas */
+  }
+
+  .banner p {
+    font-size: 0.8rem; /* Tamanho do texto para telas muito pequenas */
+  }
+
+  .banner button {
+    width: 150px; /* Ajusta a largura do botão para telas muito pequenas */
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+  }
+}

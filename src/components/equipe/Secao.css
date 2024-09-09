@@ -1,0 +1,77 @@
+.banner {
+  background-image: url('../../assets/equipe.jpg'); /* Caminho da imagem */
+  background-size: cover; /* Faz com que a imagem cubra todo o banner */
+  background-position: center; /* Centraliza a imagem no banner */
+  background-repeat: no-repeat; /* Garante que a imagem não se repita */
+  height: 60vh; /* Ajuste conforme necessário */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  color: white; /* Cor do texto */
+}
+
+.banner h1 {
+  font-size: 3rem; /* Ajuste o tamanho do título */
+  margin: 0;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+}
+
+.banner p {
+  font-size: 1.2rem; /* Ajuste o tamanho do subtítulo */
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+}
+
+.banner button {
+  margin: 1.2rem;
+  height: 48px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem; /* Ajuste conforme necessário */
+  font-weight: 400;
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao passar sobre o botão */
+}
+
+/** RESPONSIVIDADE **/
+
+@media (max-width: 1200px) {
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 0.8rem;
+  }
+
+  .banner button {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+}
