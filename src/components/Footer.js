@@ -26,7 +26,8 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <h2>Entre em contato!</h2>
-        <p>Para orçamentos e dúvidas entre em contato. Estamos prontos para atendê-lo!</p>
+        <p>Para orçamentos e dúvidas entre em contato. </p>
+        <p> Estamos prontos para atendê-lo!</p>
         <a href="mailto:contato@arcaembrioes.com" className="btn">Enviar mensagem</a>
       </div>
       <div className="footer-banner">

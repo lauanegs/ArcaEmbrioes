@@ -1,4 +1,4 @@
-.contact-banner {
+.secao {
   position: relative;
   padding: 20px 40px;
   background: url('../../assets/equipe.jpg') no-repeat center center;
@@ -13,17 +13,17 @@
   text-align: left;
 }
 
-.contact-banner > div {
+.secao > div {
   max-width: 60%;
 }
 
-.contact-banner h2 {
+.secao h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #FFFFFF;
 }
 
-.contact-banner p {
+.secao p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #FFFFFF;

@@ -1,13 +1,14 @@
 import React from 'react';
-import './BannerHome.css'; // Certifique-se de que o CSS está corretamente importado
+import './BannerHome.css';
 
 const BannerHome = () => {
   return (
-    <div className="banner">
+    <div className='banner-home'>
       <h1>Melhoramento genético com o melhor atendimento e resultado do mercado</h1>
       <p>A Arca Embriões está sempre atendendo com excelência seus parceiros de Patos de Minas e região.</p>
-      <button>Saiba Mais</button>
+      <button>Saiba mais</button>
     </div>
+
   );
 }
 

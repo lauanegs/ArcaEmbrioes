@@ -1,24 +1,33 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinha itens ao topo */
+  align-items: center; /* Centraliza verticalmente os itens no footer */
   padding: 20px;
   background-color: #1A154B;
   color: #FFFFFF; /* Define a cor do texto como branca */
   position: relative;
   overflow: hidden; /* Garante que nada saia da área definida */
+  min-height: 500px; /* Ajusta a altura mínima do footer (aumente o valor conforme necessário) */
 }
 
 .footer-left, .footer-right {
+  flex: 1; /* Garante que ambos os lados tenham tamanhos iguais */
   z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
 }
 
 .footer-left {
-  flex: 1;
   padding: 20px;
+  text-align: left; /* Alinha textos à esquerda */
+  margin-left: 80px; /* Ajusta a margem à esquerda para posicionar o texto */
 }
 
-.footer-left h2, .footer-left p {
+.footer-left h2 {
+  color: #FFFFFF; /* Define a cor do texto como branca */
+  margin: 0; /* Remove margens padrão */
+  font-size: 2rem;
+}
+
+.footer-left p {
   color: #FFFFFF; /* Define a cor do texto como branca */
   margin: 0; /* Remove margens padrão */
 }
@@ -44,13 +53,12 @@
 
 /* Estilos para a parte direita do rodapé */
 .footer-right {
-  flex: 1;
   padding: 20px;
   color: #ffffff; /* Cor do texto na parte direita */
-  text-align: right;
+  text-align: center; /* Centraliza o texto horizontalmente */
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Alinha o texto e o botão à direita */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
   justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
 }
 
@@ -63,7 +71,7 @@
 .footer-right p {
   color: #ffffff; /* Cor do texto */
   font-size: 1rem; /* Tamanho da fonte do texto */
-  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+  margin-bottom: 2px; /* Espaçamento abaixo do parágrafo */
 }
 
 .footer-right .btn {
@@ -76,6 +84,7 @@
   display: inline-block;
   font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
   font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
+  margin-top: 20px;
 }
 
 .footer-right .btn:hover {
@@ -86,9 +95,9 @@
 /* Container da imagem de fundo */
 .footer-banner {
   position: absolute;
-  right: 0;
+  right: 0; /* Posiciona a imagem na borda direita */
   bottom: 0;
-  width: 40%; /* Ajusta a largura da imagem */
+  width: 70%; /* Ajusta a largura da imagem para 80% */
   height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
   overflow: hidden;
   z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */
