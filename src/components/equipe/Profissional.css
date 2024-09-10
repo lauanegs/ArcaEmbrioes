@@ -5,6 +5,16 @@
   flex-wrap: wrap;
 }
 
+.profissional p {
+  font-size: 1rem; /* Tamanho do subtítulo */
+  color: #1A154B; /* Cor do subtítulo */
+  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+  max-width: 800px; /* Limita a largura do subtítulo */
+  margin-left: auto; /* Centraliza o subtítulo horizontalmente */
+  margin-right: auto; /* Centraliza o subtítulo horizontalmente */
+  text-align: center;
+}
+
 .profissional-card {
   border-radius: 8px;
   padding: 20px;
