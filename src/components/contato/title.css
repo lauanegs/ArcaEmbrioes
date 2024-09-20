@@ -9,18 +9,18 @@
 }
 
 .container-title{
-    width: 75%;
+    width: 100%;
 }
 
 .title {
     color: #fff;
-    font-size: 5rem;
+    font-size: 4.2rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .container-subtitle{
-    width: 35%;
+    width: 50%;
 }
 
 .subtitle {

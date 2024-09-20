@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.banner-contato{
+.container-banner{
     display: flex;
     flex-direction: column;
     justify-content: center;

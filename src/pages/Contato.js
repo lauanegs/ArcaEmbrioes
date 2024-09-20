@@ -1,21 +1,30 @@
 import React from 'react';
-import "./Contato.css"
+import "./Contato.css";
 import { BannerContato } from '../components/contato/banner';
 import { Title } from '../components/contato/title';
 import { Contatos } from '../components/contato/contatos';
+import { Formulario } from '../components/contato/formulario';
 const Contato = () => {
   return (
-    <div class="container">
-      <BannerContato/>
+    <div className="container">
+      <section>
+        <BannerContato/>
+      </section>
       
-      <Title
-        title="Entre em contato" 
-        subTitle="Nos envie um e-mail ou venha nos conhecer pessoalmente!"
-        colorTitle="PURPLE"
-        colorSubTitle="BLACK"
-      />
+      <section className='contatos'>
+        <Title
+          title="Entre em contato"
+          subTitle="Nos envie um e-mail ou venha nos conhecer pessoalmente!"
+          colorTitle="PURPLE"
+          colorSubTitle="BLACK"
+        />
+        <div style={{marginTop: 60}}><Contatos/></div>
+      </section>
 
-      <Contatos/>
+      <section className='formulario'>
+        <Formulario/>
+      </section>
+
     </div>
   );
 }
