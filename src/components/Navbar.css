@@ -1,18 +1,55 @@
+/* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1A154B;
+  background-color: rgba(255, 255, 255, 0.0); /* Transparente inicialmente */
+  position: fixed; /* Fixar a navbar no topo */
+  width: 100%; /* Garantir que ocupe toda a largura */
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transições suaves */
+  backdrop-filter: blur(0px); /* Nenhum desfoque inicialmente */
+  z-index: 1000; /* Manter acima de outros conteúdos */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02); /* Sombra extremamente sutil */
+  transform: translateY(-100%); /* Inicialmente escondida */
+}
+
+.navbar.visible {
+  transform: translateY(0); /* Exibir a navbar */
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco quase opaco ao rolar */
+  backdrop-filter: blur(8px); /* Adicionar desfoque sutil */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .social-icons a img {
+  color: #1A154B; /* Cor escura para links e ícones sociais quando rolada */
+}
+
+.navbar .nav-links a,
+.navbar .social-icons a img {
+  color: #FFFFFF; /* Cor branca para links e ícones sociais inicialmente */
 }
 
 .logo img {
   height: 50px;
+  transition: transform 0.3s ease; /* Transição suave para o logo */
+}
+
+.navbar.scrolled .logo img {
+  transform: scale(1.05); /* Levemente aumentar o logo ao rolar */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  margin: 0; /* Remover margem padrão */
+  margin-right: 20px; /* Mover links para a direita */
 }
 
 .nav-links li {
@@ -21,16 +58,30 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #FFFFFF; /* Cor branca para links inicialmente */
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transição suave para cor e transformação */
 }
 
 .nav-links a:hover {
-  color: #CCCCCC;
+  color: #CCCCCC; /* Cor mais clara ao passar o mouse */
+  transform: scale(1.1); /* Levemente aumentar o link ao passar o mouse */
+}
+
+.social-icons a {
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Levemente aumentar os ícones sociais ao passar o mouse */
 }
 
 .social-icons a img {
   height: 24px;
-  margin-left: 10px;
+  transition: filter 0.3s ease; /* Transição suave para o filtro */
+}
+
+.navbar.scrolled .social-icons a img {
+  filter: brightness(1); /* Manter ícones sociais na cor escura (não alterar brilho) quando rolada */
 }

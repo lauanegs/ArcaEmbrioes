@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import bannerImage from '../assets/banner.jpg';
+import bannerImage from '../assets/footer.png';
 
 const Footer = () => {
   return (
@@ -26,7 +26,8 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <h2>Entre em contato!</h2>
-        <p>Para orçamentos e dúvidas entre em contato. Estamos prontos para atendê-lo!</p>
+        <p>Para orçamentos e dúvidas entre em contato. </p>
+        <p> Estamos prontos para atendê-lo!</p>
         <a href="mailto:contato@arcaembrioes.com" className="btn">Enviar mensagem</a>
       </div>
       <div className="footer-banner">

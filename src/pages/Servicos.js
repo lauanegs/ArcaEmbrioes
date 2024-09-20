@@ -1,10 +1,12 @@
 import React from 'react';
+import IntroBanner from '../components/servicos/IntroBanner';
+import BannerEquipe from '../components/servicos/BannerEquipe';
 
 const Servicos = () => {
   return (
     <div>
-      <h1>Serviços</h1>
-      <p>Informações sobre os serviços oferecidos...</p>
+      <BannerEquipe/>
+      <IntroBanner />
     </div>
   );
 }
