@@ -3,26 +3,27 @@ import "./formulario.css";
 
 export const Formulario = () => {
     return(
-        <div className="container-formulario"> 
+        <form className="container-formulario"> 
             <div className="campo">
                 <p className="label">Nome completo:</p>
-                <input placeholder="seu nome..."/>
+                <input required/>
             </div>
             <div className="campo">
                 <p className="label">E-mail:</p>
-                <input placeholder="voce@gmail.com"/>
+                <input required/>
 
             </div>
             <div className="campo">
                 <p className="label">Assunto:</p>
-                <input placeholder="assunto..."/>
+                <input required/>
 
             </div>
             <div className="campo">
                 <p className="label">Mensagem: </p>
-                <input placeholder="mensagem"/>
+                <textarea id="mensagem" maxLength={250}/>
 
             </div>
-        </div>
+            <button className="btn-form">Enviar mensagem</button>
+        </form>
     )
 }

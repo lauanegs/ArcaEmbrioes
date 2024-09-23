@@ -6,7 +6,7 @@
 
 .contatos {
     background-color: #F0F0F0;
-    height: 105vh;
+    height: 90vh;
     width: 90%;
     
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 .formulario {
-    width: 90%;
+    width: 65%;
     height: 90vh;
 
     display: flex;

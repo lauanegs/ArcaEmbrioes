@@ -20,22 +20,52 @@
     padding: 10px;
 }
 
-.campo input {
+.campo input, textarea {
     width: 25rem;
     height: 2.2rem;
     margin: 0 auto;
     padding: 8px;
 
     border: none;
+    outline: none;
     border-radius: 10px;
 
     background-color: #5E5B81;
 
     color: #fff;
+    
 }
 
-.campo input:focus {
-    outline: black;
+#mensagem {
+    height: 200px;
+    
+    text-align: start;
+}
+
+.campo input:focus, textarea:focus {
+    border: 1px solid black;
     background-color: #fff;
     color: #000;
+}
+
+.btn-form{
+    width: 10rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #5E5B81;
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+.btn-form:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.btn-form:active {
+    background: #124A6C;
+    
 }
