@@ -1,0 +1,44 @@
+.container-contatos {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+   
+    
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.header-contato {
+    
+}
+
+ .contato p {
+    text-align: center;
+ }
+
+.contato:hover{
+    background-color: #124A6C;
+    color: #FFFFFF;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.nome-contato {
+    padding: 20px;
+}
