@@ -1,12 +1,16 @@
 import React from 'react';
 import IntroBanner from '../components/servicos/IntroBanner';
-import BannerEquipe from '../components/servicos/BannerEquipe';
+import BannerServicos from '../components/servicos/BannerServicos';
+import OutroBanner from '../components/servicos/OutroBanner';
 
 const Servicos = () => {
   return (
     <div>
-      <BannerEquipe/>
+      <BannerServicos/>
       <IntroBanner />
+      <OutroBanner/>
+      <IntroBanner />
+      <OutroBanner/>
     </div>
   );
 }

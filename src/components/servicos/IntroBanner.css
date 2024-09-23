@@ -18,7 +18,7 @@
 
 /* Título do texto de introdução */
 .intro-text h1 {
-  font-size: 4rem; /* Tamanho do título */
+  font-size: 2.5rem; /* Tamanho do título reduzido */
   color: #1A154B; /* Cor do título */
   margin-bottom: 30px; /* Espaçamento abaixo do título */
   text-align: left; /* Alinha o título à esquerda */
@@ -32,21 +32,14 @@
   text-align: left; /* Alinha o parágrafo à esquerda */
 }
 
-/* Botão no texto de introdução */
+/* Botão no texto de introdução (removido) */
 .intro-text .btn {
-  background-color: #1A154B; /* Cor de fundo do botão */
-  color: #FFFFFF; /* Cor do texto do botão */
-  padding: 10px 20px; /* Padding do botão */
-  text-decoration: none; /* Remove o sublinhado */
-  border-radius: 5px; /* Bordas arredondadas do botão */
-  display: inline-block; /* Ajusta o botão para alinhamento */
-  margin-left: 0; /* Alinha o botão à esquerda */
-  text-align: left; /* Alinha o texto do botão à esquerda */
+  display: none; /* Oculta o botão */
 }
 
-/* Hover do botão */
+/* Hover do botão (removido) */
 .intro-text .btn:hover {
-  background-color: #333366; /* Cor do botão ao passar o mouse */
+  background-color: #333366; /* Cor do botão ao passar o mouse (não será visível) */
 }
 
 /* Imagem de introdução */
@@ -65,20 +58,20 @@
   border-radius: 8px; /* Bordas arredondadas para a imagem */
 }
 
-/* Card na parte inferior da imagem */
-.year-card {
-  background-color: #FFFFFF; /* Cor de fundo do card */
-  color: #1A154B; /* Cor do texto no card */
-  padding: 20px; /* Padding do card */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-align: center; /* Centraliza o texto dentro do card */
-  font-weight: bold; /* Destaque para o texto */
-  position: absolute; /* Posiciona o card sobre a imagem */
-  bottom: 20px; /* Espaçamento da parte inferior da imagem */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta para centralizar */
-  width: 200px; /* Largura do card */
-}
+/* Card na parte inferior da imagem (removido) */
+/* .year-card {
+  background-color: #FFFFFF; /* Cor de fundo do card * /
+  color: #1A154B; /* Cor do texto no card * /
+  padding: 20px; /* Padding do card * /
+  border-radius: 8px; /* Bordas arredondadas * /
+  text-align: center; /* Centraliza o texto dentro do card * /
+  font-weight: bold; /* Destaque para o texto * /
+  position: absolute; /* Posiciona o card sobre a imagem * /
+  bottom: 20px; /* Espaçamento da parte inferior da imagem * /
+  left: 50%; /* Centraliza horizontalmente * /
+  transform: translateX(-50%); /* Ajusta para centralizar * /
+  width: 200px; /* Largura do card * /
+} */
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -96,12 +89,13 @@
     max-width: 80%; /* Largura ajustada da imagem em telas menores */
   }
   
-  .year-card {
-    width: 80%; /* Largura ajustada do card em telas menores */
-    position: static; /* Remove o posicionamento absoluto em telas menores */
-    margin-top: 20px; /* Espaçamento acima do card */
-    bottom: auto; /* Remove o espaçamento da parte inferior da imagem */
-  }
+  /* Card removido */
+  /* .year-card {
+    width: 80%; /* Largura ajustada do card em telas menores * /
+    position: static; /* Remove o posicionamento absoluto em telas menores * /
+    margin-top: 20px; /* Espaçamento acima do card * /
+    bottom: auto; /* Remove o espaçamento da parte inferior da imagem * /
+  } */
 }
 
 @media (max-width: 480px) {
@@ -113,7 +107,8 @@
     font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo para telas pequenas */
   }
   
-  .year-card {
-    width: 100%; /* Largura total do card em telas muito pequenas */
-  }
+  /* Card removido */
+  /* .year-card {
+    width: 100%; /* Largura total do card em telas muito pequenas * /
+  } */
 }
