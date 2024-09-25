@@ -23,6 +23,7 @@
   font-size: var(--titulos-maiores); /* Usando a variável */
   color: var(--azul-escuro); /* Usando a variável */
   margin-bottom: 20px; /* Espaçamento abaixo do título reduzido */
+  font-family: var(--montserrat);
 }
 
 /* Parágrafo do texto de introdução */
@@ -30,6 +31,7 @@
   font-size: var(--paragrafos); /* Usando a variável */
   color: var(--cinza-escuro); /* Usando a variável */
   margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+  font-family: var(--montserrat);
 }
 
 /* Botão de orçamento */

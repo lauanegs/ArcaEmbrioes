@@ -8,6 +8,7 @@ import Equipe from './pages/Equipe';
 import Servicos from './pages/Servicos';
 import Contato from './pages/Contato';
 import './App.css';
+import 'typeface-montserrat';
 
 function App() {
   return (

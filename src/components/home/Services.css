@@ -12,6 +12,7 @@
   font-size: var(--titulos); /* Usando a variável */
   color: var(--azul-escuro); /* Usando a variável */
   margin-bottom: 10px;
+  font-family: var(--montserrat);
 }
 
 .services-subtitle {
@@ -21,6 +22,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-family: var(--montserrat);
 }
 
 .card-container {
@@ -54,4 +56,5 @@
   font-size: var(--paragrafos); /* Usando a variável */
   margin-top: 5px;
   color: var(--azul-escuro); /* Usando a variável */
+  font-family: var(--montserrat);
 }

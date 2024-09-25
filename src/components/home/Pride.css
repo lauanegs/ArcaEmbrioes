@@ -5,6 +5,7 @@
 
 .pride h2 {
   color: var(--azul-escuro); /* Usando a variável */
+  font-family: var(--montserrat);
 }
 
 .pride-subtitle {
@@ -15,6 +16,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-family: var(--montserrat);
 }
 
 .video-container {

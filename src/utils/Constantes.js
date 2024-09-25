@@ -2,13 +2,18 @@ const tamanhos = {
     titulos_maiores: '4rem',
     titulos: '1.2rem',
     paragrafos: '0.8rem',
-}
+};
 
 const cores = {
     azul_escuro: '#1A154B',
     quase_preto: '#1E1E1E',
-    branco: '#FFFFFF'
-}
+    branco: '#FFFFFF',
+};
+
+// Nova constante para fontes
+const fontes = {
+    montserrat: "'Montserrat', sans-serif",
+};
 
 // Função para definir variáveis CSS
 export function setCssVariables() {
@@ -23,10 +28,15 @@ export function setCssVariables() {
     for (const [key, value] of Object.entries(cores)) {
         root.style.setProperty(`--${key}`, value);
     }
+
+    // Definindo fontes
+    for (const [key, value] of Object.entries(fontes)) {
+        root.style.setProperty(`--${key}`, value);
+    }
 }
 
-// Exportar tamanhos e cores
-export { tamanhos, cores };
+// Exportar tamanhos, cores e fontes
+export { tamanhos, cores, fontes };
 
 // Chamar a função para aplicar as variáveis imediatamente
 setCssVariables();
