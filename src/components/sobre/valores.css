@@ -1,14 +1,21 @@
-.card {
-    border-radius: 24px;
-    box-shadow: 5px;
-    margin: 20px 10px;
-}
-
 .lista-cards {
     max-width: 1208px;
-    margin: 20px;
+    margin: 20px auto; /* Centraliza horizontalmente */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: center;
+    justify-content: space-between; /* Espaça as colunas igualmente */
+    align-items: flex-start; /* Alinha as colunas no topo */
+}
+
+.coluna {
+    flex: 1; /* Cada coluna ocupará espaço igual */
+    padding: 20px; /* Padding interno para as colunas */
+    text-align: center; /* Centraliza o texto dentro das colunas */
+}
+
+.separator {
+    width: 2px; /* Largura da linha separadora */
+    background-color: #6a0dad; /* Cor roxa */
+    height: auto; /* Altura automática para se ajustar à coluna */
+    min-height: 100px; /* Define uma altura mínima para a linha */
+    margin: 0 20px; /* Margem para dar espaço entre as colunas */
 }

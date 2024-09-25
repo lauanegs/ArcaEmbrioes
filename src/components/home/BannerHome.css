@@ -1,3 +1,4 @@
+/* Estilos para o banner principal */
 .banner-home {
   background-image: url('../../assets/bannerp.png');
   background-size: cover;
@@ -9,6 +10,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Pseudo-elemento para a sombra */
+.banner-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 21, 75, 0.5); /* Ajuste a cor e opacidade da sombra conforme necessário */
+  z-index: 1; /* Garante que a sombra fique atrás do conteúdo do banner */
+}
+
+/* Ajusta o conteúdo do banner para não sobrepor a sombra */
+.banner-home > * {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo fique acima da sombra */
+}
+
+/* Logo.css */
+.logo-container {
+  text-align: center; /* Centraliza a logo */
+  margin: 20px; /* Espaçamento ao redor da logo */
+}
+
+.logo-image {
+  max-width: 100%; /* Para garantir que a imagem não exceda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 /** RESPONSIVIDADE BANNER SOBRE **/
@@ -51,20 +81,17 @@
 
 /** FIM RESPONSIVIDADE BANNER SOBRE **/
 
-.banner-home h1{
-  justify-content: center;
-  align-items: center;
+.banner-home h1 {
   padding: 5px;
-  color:white;
+  color: var(--branco); /* Usando a variável */
   font-weight: bold;
-  font-size: 5rem;
-  
+  font-size: var(--titulos_maiores); /* Usando a variável */
 }
 
-.banner-home p{
+.banner-home p {
   text-align: center;
-  font-size: 1rem;
-  color: white;
+  font-size: var(--titulos); /* Usando a variável */
+  color: var(--branco); /* Usando a variável */
 }
 
 .banner-home button {
@@ -72,9 +99,9 @@
   height: 48px;
   width: 250px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--branco); /* Usando a variável */
   border-radius: 12px;
-  color: white;
-  font-size: 20px;
+  color: var(--branco); /* Usando a variável */
+  font-size: var(--paragrafos); /* Usando a variável */
   font-weight: 400;
 }

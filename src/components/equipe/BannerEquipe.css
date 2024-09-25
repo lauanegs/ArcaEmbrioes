@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Ajuste a cor e opacidade da sombra conforme necessário */
+  background: rgba(26, 21, 75, 0.5); /* Ajuste a cor e opacidade da sombra conforme necessário */
   z-index: 1; /* Garante que a sombra fique atrás do conteúdo do banner */
 }
 

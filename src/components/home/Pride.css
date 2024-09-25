@@ -1,33 +1,33 @@
+/* Estilo da seção Pride */
 .pride {
-    background-color: #F0F0F0;
-  }
-  
-  .pride h2 {
-    color: #1A154B;
-  }
-  
-  .pride-subtitle {
-    font-size: 1rem;
-    color: #1A154B;
-    margin-bottom: 20px;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .video-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 20px;
-  }
-  
-  .video-container iframe {
-    width: 70%;
-    height: 350px;
-    max-width: 50%;
-    border: none;
-    border-radius: 10px;
-  }
-  
+  background-color: var(--cinza-claro); /* Usando a variável */
+}
+
+.pride h2 {
+  color: var(--azul-escuro); /* Usando a variável */
+}
+
+.pride-subtitle {
+  font-size: var(--paragrafos); /* Usando a variável */
+  color: var(--azul-escuro); /* Usando a variável */
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.video-container iframe {
+  width: 70%;
+  height: 350px;
+  max-width: 50%;
+  border: none;
+  border-radius: 10px;
+}

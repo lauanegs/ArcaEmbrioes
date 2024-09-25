@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setCssVariables } from '../utils/Constantes'; 
 import BannerHome from '../components/home/BannerHome';
 import IntroBanner from '../components/home/IntroBanner';
 import Services from '../components/home/Services';
@@ -8,6 +9,10 @@ import Advantages from '../components/home/Advantages';
 import Pride from '../components/home/Pride';
 
 const Home = () => {
+  useEffect(() => {
+    setCssVariables();
+  }, []);
+
   return (
     <div>
       <BannerHome />

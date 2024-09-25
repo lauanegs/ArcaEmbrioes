@@ -4,80 +4,64 @@
   align-items: center; /* Alinha verticalmente os itens no banner */
   justify-content: space-between; /* Espaça o texto e a imagem */
   padding: 40px; /* Padding uniforme ao redor do banner */
-  background-color: #f0f0f0; /* Cor de fundo do banner */
+  background-color: var(--cinza-claro); /* Usando a variável */
   position: relative; /* Necessário para o posicionamento do card */
   flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+  margin-left: 20px; /* Aumenta a margem esquerda */
+  margin-right: 20px; /* Aumenta a margem direita */
 }
 
 /* Texto de introdução */
 .intro-text {
   max-width: 35%; /* Limita a largura do texto de introdução */
   text-align: center; /* Centraliza o texto dentro do container */
-  margin-bottom: 20px; /* Espaçamento abaixo do texto */
+  margin: 0; /* Remove margens padrão */
 }
 
 /* Título do texto de introdução */
 .intro-text h1 {
-  font-size: 4rem; /* Tamanho do título */
-  color: #1A154B; /* Cor do título */
-  margin-bottom: 30px; /* Espaçamento abaixo do título */
-  text-align: left; /* Alinha o título à esquerda */
+  font-size: var(--titulos-maiores); /* Usando a variável */
+  color: var(--azul-escuro); /* Usando a variável */
+  margin-bottom: 20px; /* Espaçamento abaixo do título reduzido */
 }
 
 /* Parágrafo do texto de introdução */
 .intro-text p {
-  font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
-  color: #333; /* Cor do texto */
+  font-size: var(--paragrafos); /* Usando a variável */
+  color: var(--cinza-escuro); /* Usando a variável */
   margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
-  text-align: left; /* Alinha o parágrafo à esquerda */
 }
 
-/* Botão no texto de introdução */
-.intro-text .btn {
-  background-color: #1A154B; /* Cor de fundo do botão */
-  color: #FFFFFF; /* Cor do texto do botão */
+/* Botão de orçamento */
+.orcamento-btn {
+  background-color: var(--azul-escuro); /* Usando a variável */
+  color: var(--branco); /* Usando a variável */
   padding: 10px 20px; /* Padding do botão */
   text-decoration: none; /* Remove o sublinhado */
   border-radius: 5px; /* Bordas arredondadas do botão */
   display: inline-block; /* Ajusta o botão para alinhamento */
-  margin-left: 0; /* Alinha o botão à esquerda */
-  text-align: left; /* Alinha o texto do botão à esquerda */
+  margin-top: 20px; /* Espaçamento acima do botão */
 }
 
 /* Hover do botão */
-.intro-text .btn:hover {
-  background-color: #333366; /* Cor do botão ao passar o mouse */
+.orcamento-btn:hover {
+  background-color: #333366; /* Pode ser ajustado para usar uma variável, se desejado */
 }
 
 /* Imagem de introdução */
 .intro-image {
-  max-width: 40%; /* Reduz a largura da imagem */
+  max-width: 35%; /* Alinha a largura da imagem com o texto */
   display: flex;
   justify-content: center; /* Centraliza a imagem horizontalmente */
-  align-items: flex-end; /* Alinha a imagem ao final do container */
-  position: relative; /* Para o posicionamento do card */
+  align-items: center; /* Centraliza verticalmente */
 }
 
 /* Imagem de introdução */
 .intro-image img {
-  width: 100%; /* Ajusta a largura da imagem para ocupar o espaço disponível */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 250px; /* Largura fixa para a imagem */
+  height: 250px; /* Altura fixa para tornar a imagem quadrada */
+  object-fit: cover; /* Corta a imagem para preencher o espaço */
   border-radius: 8px; /* Bordas arredondadas para a imagem */
-}
-
-/* Card na parte inferior da imagem */
-.year-card {
-  background-color: #FFFFFF; /* Cor de fundo do card */
-  color: #1A154B; /* Cor do texto no card */
-  padding: 20px; /* Padding do card */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-align: center; /* Centraliza o texto dentro do card */
-  font-weight: bold; /* Destaque para o texto */
-  position: absolute; /* Posiciona o card sobre a imagem */
-  bottom: 20px; /* Espaçamento da parte inferior da imagem */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta para centralizar */
-  width: 200px; /* Largura do card */
 }
 
 /* Responsividade */
@@ -95,13 +79,6 @@
   .intro-image {
     max-width: 80%; /* Largura ajustada da imagem em telas menores */
   }
-  
-  .year-card {
-    width: 80%; /* Largura ajustada do card em telas menores */
-    position: static; /* Remove o posicionamento absoluto em telas menores */
-    margin-top: 20px; /* Espaçamento acima do card */
-    bottom: auto; /* Remove o espaçamento da parte inferior da imagem */
-  }
 }
 
 @media (max-width: 480px) {
@@ -110,10 +87,6 @@
   }
   
   .intro-text p {
-    font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo para telas pequenas */
-  }
-  
-  .year-card {
-    width: 100%; /* Largura total do card em telas muito pequenas */
+    font-size: var(--paragrafos); /* Usando a variável */
   }
 }

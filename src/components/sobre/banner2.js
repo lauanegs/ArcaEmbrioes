@@ -1,16 +1,15 @@
 import React from 'react';
-import './ContactBanner.css';
+import './banner2.css';
 
-const ContactBanner = () => {
+const Banner2 = () => {
   return (
-    <section className="secao">
+    <section className="banner2">
       <h2>Nossos profissionais estão prontos para te atender!</h2>
-      <div className="contact-buttons1">
+      <div className="contact-buttons3">
         <a href="#contato" className="btn">Entre em Contato</a>
       </div>
     </section>
   );
 }
 
-export default ContactBanner;
-
+export default Banner2;

@@ -1,0 +1,77 @@
+/* Estilos para o banner de introdução */
+.intro-equipe {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no banner */
+    justify-content: space-between; /* Espaça o texto e a imagem */
+    padding: 40px; /* Padding uniforme ao redor do banner */
+    background-color: var(--cinza-claro); /* Usando a variável */
+    position: relative; /* Necessário para o posicionamento do card */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+    margin-left: 20px; /* Aumenta a margem esquerda */
+    margin-right: 20px; /* Aumenta a margem direita */
+  }
+  
+  /* Texto de introdução */
+  .intro-text1 {
+    max-width: 35%; /* Limita a largura do texto de introdução */
+    text-align: center; /* Centraliza o texto dentro do container */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  /* Título do texto de introdução */
+  .intro-text1 h1 {
+    font-size: var(--titulos-maiores); /* Usando a variável */
+    color: var(--azul-escuro); /* Usando a variável */
+    margin-bottom: 20px; /* Espaçamento abaixo do título reduzido */
+  }
+  
+  /* Parágrafo do texto de introdução */
+  .intro-text1 p {
+    font-size: var(--paragrafos); /* Usando a variável */
+    color: var(--cinza-escuro); /* Usando a variável */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+  }
+  
+  /* Imagem de introdução */
+  .intro-image1 {
+    max-width: 35%; /* Alinha a largura da imagem com o texto */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  /* Imagem de introdução */
+  .intro-image1 img {
+    width: 250px; /* Largura fixa para a imagem */
+    height: 250px; /* Altura fixa para tornar a imagem quadrada */
+    object-fit: cover; /* Corta a imagem para preencher o espaço */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .intro-equipe {
+      flex-direction: column; /* Muda o layout para coluna em telas menores */
+      text-align: center; /* Centraliza o texto em telas menores */
+    }
+  
+    .intro-text1 {
+      max-width: 100%; /* Largura total em telas menores */
+      margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    }
+  
+    .intro-image1 {
+      max-width: 80%; /* Largura ajustada da imagem em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro-text1 h1 {
+      font-size: 2rem; /* Ajusta o tamanho da fonte do título para telas pequenas */
+    }
+  
+    .intro-text1 p {
+      font-size: var(--paragrafos); /* Usando a variável */
+    }
+  }
+  

@@ -2,7 +2,7 @@ import React from 'react';
 import BannerSobre from '../components/sobre/banner';
 import Texto from '../components/sobre/texto';
 import Valores from '../components/sobre/valores';
-import Missao from '../components/sobre/missao';
+import Banner2 from '../components/sobre/banner2';
 
 const Sobre = () => {
   return (
@@ -10,7 +10,7 @@ const Sobre = () => {
     <BannerSobre/>
     <Texto/>
     <Valores/>
-    <Missao/>
+    <Banner2/>
     </>
   );
 }
