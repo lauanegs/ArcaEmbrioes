@@ -5,29 +5,32 @@
   flex-wrap: wrap;
 }
 
+/* Estilo para o parágrafo do profissional */
 .profissional p {
   font-size: 1rem; /* Tamanho do subtítulo */
-  color: #1A154B; /* Cor do subtítulo */
+  color: var(--azul-escuro); /* Usando a variável para cor */
   margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
   max-width: 800px; /* Limita a largura do subtítulo */
   margin-left: auto; /* Centraliza o subtítulo horizontalmente */
   margin-right: auto; /* Centraliza o subtítulo horizontalmente */
   text-align: center;
+  font-family: var(--montserrat); /* Fonte para o texto */
 }
 
+/* Estilo do cartão profissional */
 .profissional-card {
   border-radius: 8px;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 20px 40px; /* Padding ajustado */
   width: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--cinza-claro); /* Fundo do cartão */
 }
 
+/* Imagem do cartão profissional */
 .profissional-card img {
   width: 100%;
   height: auto;
@@ -35,13 +38,17 @@
   margin-bottom: 15px;
 }
 
+/* Estilo do título dentro do cartão profissional */
 .profissional-card h3 {
-  font-size: 1.2rem;
-  color: #1A154B;
+  font-size: 1.2rem; /* Tamanho do título */
+  color: var(--azul-escuro); /* Usando a variável para cor */
   margin-bottom: 5px;
+  font-family: var(--montserrat); /* Fonte para o título */
 }
 
+/* Estilo para a descrição do profissional */
 .profissional-description {
-  font-size: 0.9rem;
-  color: #666666;
+  font-size: 0.9rem; /* Tamanho da descrição */
+  color: var(--cinza-escuro); /* Usando a variável para cor */
+  font-family: var(--montserrat); /* Fonte para a descrição */
 }

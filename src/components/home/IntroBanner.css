@@ -1,8 +1,8 @@
 /* Estilos para o banner de introdução */
 .intro-banner {
   display: flex;
-  align-items: center; /* Alinha verticalmente os itens no banner */
-  justify-content: space-between; /* Espaça o texto e a imagem */
+  align-items: center; /* Alinha os itens no topo */
+  justify-content: center; /* Espaça o texto e a imagem */
   padding: 40px; /* Padding uniforme ao redor do banner */
   background-color: var(--cinza-claro); /* Usando a variável */
   position: relative; /* Necessário para o posicionamento do card */
@@ -14,7 +14,7 @@
 /* Texto de introdução */
 .intro-text {
   max-width: 35%; /* Limita a largura do texto de introdução */
-  text-align: center; /* Centraliza o texto dentro do container */
+  text-align: left; /* Alinha o texto à esquerda */
   margin: 0; /* Remove margens padrão */
 }
 
@@ -36,32 +36,40 @@
 
 /* Botão de orçamento */
 .orcamento-btn {
-  background-color: var(--azul-escuro); /* Usando a variável */
-  color: var(--branco); /* Usando a variável */
-  padding: 10px 20px; /* Padding do botão */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: #1A154B; /* Cor do texto */
+  padding: 12px 24px; /* Aumenta o padding para um botão mais visível */
   text-decoration: none; /* Remove o sublinhado */
-  border-radius: 5px; /* Bordas arredondadas do botão */
+  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
+  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
   display: inline-block; /* Ajusta o botão para alinhamento */
+  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+  font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
   margin-top: 20px; /* Espaçamento acima do botão */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Hover do botão */
 .orcamento-btn:hover {
-  background-color: #333366; /* Pode ser ajustado para usar uma variável, se desejado */
+  background-color: #333366; /* Cor de fundo no hover */
+  color:#ffffff;
+  transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
 }
 
 /* Imagem de introdução */
 .intro-image {
-  max-width: 35%; /* Alinha a largura da imagem com o texto */
+  width: 400px; /* Largura fixa para o container da imagem */
+  height: 400px; /* Altura fixa para manter a imagem quadrada */
   display: flex;
   justify-content: center; /* Centraliza a imagem horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center; /* Alinha a imagem ao topo */
+  margin-top: 100px; /* Espaçamento acima da imagem */
 }
 
 /* Imagem de introdução */
 .intro-image img {
-  width: 250px; /* Largura fixa para a imagem */
-  height: 250px; /* Altura fixa para tornar a imagem quadrada */
+  width: 100%; /* Faz a imagem ocupar 100% do container */
+  height: 100%; /* Faz a imagem ocupar 100% do container */
   object-fit: cover; /* Corta a imagem para preencher o espaço */
   border-radius: 8px; /* Bordas arredondadas para a imagem */
 }

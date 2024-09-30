@@ -1,5 +1,5 @@
 import React from 'react';
-import incubadoraImg from '../../assets/2021.jpg';
+import incubadoraImg from '../../assets/vidros.jpg';
 import './Structure.css';
 
 const Structure = () => {

@@ -1,5 +1,4 @@
-
-
+/* Container principal */
 .container {
     width: 100%;
     display: flex;
@@ -8,23 +7,29 @@
     align-items: center;
 }
 
-.container-title{
+/* Container para o título */
+.container-title {
     width: 100%;
 }
 
+/* Estilo do título principal */
 .title {
-    color: #fff;
-    font-size: 4.2rem;
+    color: #fff; /* Texto branco */
+    font-size: 4.2rem; /* Tamanho grande da fonte */
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: var(--montserrat); /* Fonte do título */
 }
 
-.container-subtitle{
+/* Container para o subtítulo */
+.container-subtitle {
     width: 50%;
 }
 
+/* Estilo do subtítulo */
 .subtitle {
-    color: #000;
-    font-size: 1rem;
+    color: var(--cinza-escuro); /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
     text-align: center;
+    font-family: var(--montserrat); /* Fonte do subtítulo */
 }

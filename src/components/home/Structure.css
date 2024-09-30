@@ -10,6 +10,7 @@
   font-size: var(--titulos); /* Usando a variável */
   color: var(--azul-escuro); /* Usando a variável */
   margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Subtítulo da seção */
@@ -20,6 +21,7 @@
   max-width: 800px; /* Limita a largura do subtítulo */
   margin-left: auto; /* Centraliza o subtítulo horizontalmente */
   margin-right: auto; /* Centraliza o subtítulo horizontalmente */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Estilos para o container do cartão */
@@ -62,10 +64,12 @@
   font-size: var(--titulos); /* Usando a variável */
   color: var(--azul-escuro); /* Usando a variável */
   margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Descrição dentro do cartão */
 .structure-description {
   font-size: var(--paragrafos); /* Usando a variável */
   color: #666666; /* Mantive a cor original */
+  font-family: var(--montserrat); /* Usando a variável */
 }

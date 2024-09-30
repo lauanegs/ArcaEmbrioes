@@ -1,10 +1,16 @@
-import React from 'react';
 import "./Contato.css";
 import { BannerContato } from '../components/contato/banner';
 import { Title } from '../components/contato/title';
 import { Contatos } from '../components/contato/contatos';
 import { Formulario } from '../components/contato/formulario';
+import React, { useEffect } from 'react';
+import { setCssVariables } from '../utils/Constantes'; 
+
 const Contato = () => {
+  useEffect(() => {
+    setCssVariables();
+  }, []);
+
   return (
     <div className="container">
       <section>

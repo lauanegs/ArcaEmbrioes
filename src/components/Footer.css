@@ -7,7 +7,7 @@
   color: #FFFFFF; /* Define a cor do texto como branca */
   position: relative;
   overflow: hidden; /* Garante que nada saia da área definida */
-  min-height: 500px; /* Ajusta a altura mínima do footer (aumente o valor conforme necessário) */
+  min-height: 500px; /* Ajusta a altura mínima do footer */
 }
 
 .footer-left, .footer-right {
@@ -25,11 +25,13 @@
   color: #FFFFFF; /* Define a cor do texto como branca */
   margin: 0; /* Remove margens padrão */
   font-size: 2rem;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 .footer-left p {
   color: #FFFFFF; /* Define a cor do texto como branca */
   margin: 0; /* Remove margens padrão */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 .contact-info {
@@ -49,6 +51,7 @@
 .contact-item p {
   margin-left: 10px;
   color: #FFFFFF; /* Define a cor do texto como branca */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Estilos para a parte direita do rodapé */
@@ -66,12 +69,14 @@
   color: #ffffff; /* Cor do título */
   font-size: 1.5rem; /* Tamanho da fonte do título */
   margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 .footer-right p {
   color: #ffffff; /* Cor do texto */
   font-size: 1rem; /* Tamanho da fonte do texto */
   margin-bottom: 2px; /* Espaçamento abaixo do parágrafo */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 .footer-right .btn {
@@ -85,10 +90,12 @@
   font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
   font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
   margin-top: 20px;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 .footer-right .btn:hover {
   background-color: #333366;
+  color:#FFFFFF;
   transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
 }
 
@@ -97,7 +104,7 @@
   position: absolute;
   right: 0; /* Posiciona a imagem na borda direita */
   bottom: 0;
-  width: 70%; /* Ajusta a largura da imagem para 80% */
+  width: 70%; /* Ajusta a largura da imagem para 70% */
   height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
   overflow: hidden;
   z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */

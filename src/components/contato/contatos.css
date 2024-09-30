@@ -1,44 +1,51 @@
+/* Container principal dos contatos */
 .container-contatos {
     width: 100%;
-    
     display: flex;
     justify-content: center; 
     gap: 20px; 
     flex-wrap: wrap; 
-
 }
 
+/* Estilo de cada contato */
 .contato {
     display: flex;
     flex-direction: column;
-   
-    
-
     justify-content: center;
     align-items: center;
-
-    background-color: #FFFFFF;
-    border-radius: 10px;
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
     transition: background 0.3s;
+    font-family: var(--montserrat); /* Fonte para os contatos */
+    color: var(--cinza-escuro); /* Cor do texto padrão */
 }
 
+/* Estilo do cabeçalho do contato */
 .header-contato {
-    
+    /* Adicione estilos específicos se necessário */
 }
 
- .contato p {
-    text-align: center;
- }
-
-.contato:hover{
-    background-color: #124A6C;
-    color: #FFFFFF;
+/* Estilo do texto dentro de contato */
+.contato p {
+    text-align: center; 
+    font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* Efeito hover nos contatos */
+.contato:hover {
+    background-color: #124A6C; /* Fundo escuro no hover */
+    color: #FFFFFF; /* Texto branco no hover */
+}
+
+/* Estilo do ícone */
 .icon {
     padding: 10px;
+    font-size: 1.5rem; /* Tamanho do ícone */
 }
 
+/* Estilo do nome do contato */
 .nome-contato {
     padding: 20px;
+    font-weight: bold; /* Destaque para o nome */
+    font-size: 1.2rem; /* Tamanho do nome */
 }

@@ -43,12 +43,14 @@
 .advantage-item h3 {
   font-size: var(--titulos); /* Usando a variável */
   margin-bottom: 5px;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Parágrafo dentro do item de vantagem */
 .advantage-item p {
   font-size: var(--paragrafos); /* Usando a variável */
   color: var(--cinza-claro); /* Usando a variável */
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
 /* Subtítulo das vantagens */
@@ -60,4 +62,5 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-family: var(--montserrat); /* Usando a variável */
 }

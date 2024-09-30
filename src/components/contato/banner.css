@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-.container-banner{
+/* Container do banner */
+.container-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,10 +12,23 @@
     height: 100vh;
     width: 100%;
     background: 
-    linear-gradient(rgba(26, 26, 26, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/bannerContato.jpg');
+        linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 21, 75, 0.5)),
+        url('../../assets/bannerContato.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: var(--montserrat); /* Fonte para o banner */
+    color: #fff; /* Cor do texto */
 }
 
+/* Estilo para textos dentro do banner */
+.banner-title {
+    font-size: 3rem; /* Tamanho do título */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.banner-subtitle {
+    font-size: 1.2rem; /* Tamanho do subtítulo */
+    text-align: center;
+}

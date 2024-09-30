@@ -14,28 +14,35 @@
   margin-bottom: 100px;
 }
 
+/* Estilo para o container interno */
 .contact > div {
   max-width: 60%;
 }
 
+/* Título da seção de contato */
 .contact h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #FFFFFF;
   max-width: 40%;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
+/* Parágrafo da seção de contato */
 .contact p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #FFFFFF;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
+/* Botões de contato */
 .contact-buttons1 {
   display: flex;
   gap: 10px;
 }
 
+/* Estilo dos botões */
 .contact-buttons1 .btn {
   background-color: #1A154B;
   color: #FFFFFF;
@@ -43,8 +50,10 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-family: var(--montserrat); /* Usando a variável */
 }
 
+/* Efeito de hover nos botões */
 .contact-buttons1 .btn:hover {
   background-color: #333366;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../../assets/2021.jpg';
+import logoImg from '../../assets/vidros.jpg';
 import './IntroBanner.css';
 
 const IntroBanner = () => {

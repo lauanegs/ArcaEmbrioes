@@ -1,80 +1,72 @@
+/* Banner "Sobre" */
 .banner-sobre {
-    background-image: url('../../assets/fazenda.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%; /* Usa toda a largura da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url('../../assets/fazenda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%; /* Usa toda a largura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--montserrat); /* Fonte para o banner */
 }
 
 /** RESPONSIVIDADE BANNER SOBRE **/
+/* Mantém o background size como cover para diferentes tamanhos de tela */
+@media (min-width: 1200px), 
+     (min-width: 992px) and (max-width: 1199px), 
+     (min-width: 768px) and (max-width: 991px), 
+     (min-width: 576px) and (max-width: 767px) {
+  .banner-sobre {
+      background-size: cover;
+  }
+}
 
-/* Para telas grandes (acima de 1200px) */
-@media (min-width: 1200px) {
-    .banner-sobre {
-      background-size: cover;
-    }
-  }
-  
-  /* Para telas de desktop padrão (entre 992px e 1199px) */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .banner-sobre {
-      background-size: cover;
-    }
-  }
-  
-  /* Para tablets (entre 768px e 991px) */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .banner-sobre {
-      background-size: cover;
-    }
-  }
-  
-  /* Para dispositivos móveis grandes (entre 576px e 767px) */
-  @media (min-width: 576px) and (max-width: 767px) {
-    .banner-sobre {
-      background-size: cover;
-    }
-  }
-  
-  /* Para dispositivos móveis pequenos (até 575px) */
-  @media (max-width: 575px) {
-    .banner-sobre {
-      background-size: cover;
+/* Para dispositivos móveis pequenos (até 575px) */
+@media (max-width: 575px) {
+  .banner-sobre {
       background-position: top center; /* Ajustar se necessário */
-    }
   }
+}
 
 /** FIM RESPONSIVIDADE BANNER SOBRE **/
 
-.banner-sobre h1{
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color:white;
-    font-weight: bold;
-    font-size: 5rem;
-    
+/* Estilo do título */
+.banner-sobre h1 {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white; /* Texto branco */
+  font-weight: bold;
+  font-size: 5rem; /* Tamanho grande do título */
+  text-align: center; /* Centraliza o texto */
 }
 
-.banner-sobre p{
-    text-align: center;
-    font-size: 1rem;
-    color: white;
+/* Estilo do parágrafo */
+.banner-sobre p {
+  text-align: center;
+  font-size: 1rem; /* Tamanho do texto */
+  color: white; /* Texto branco */
 }
 
+/* Estilo do botão */
 .banner-sobre button {
-    margin: 1.2rem;
-    height: 48px;
-    width: 250px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
+  margin: 1.2rem;
+  height: 48px;
+  width: 250px;
+  background-color: transparent; /* Fundo transparente */
+  border: 1px solid white; /* Borda branca */
+  border-radius: 12px; /* Bordas arredondadas */
+  color: white; /* Texto branco */
+  font-size: 20px; /* Tamanho do texto do botão */
+  font-weight: 400; /* Peso da fonte */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover no botão */
+.banner-sobre button:hover {
+  background-color: white; /* Fundo branco no hover */
+  color: #000; /* Texto escuro no hover */
 }
