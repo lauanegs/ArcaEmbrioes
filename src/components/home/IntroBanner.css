@@ -1,102 +1,110 @@
 /* Estilos para o banner de introdução */
 .intro-banner {
   display: flex;
-  align-items: center; /* Alinha os itens no topo */
-  justify-content: center; /* Espaça o texto e a imagem */
-  padding: 40px; /* Padding uniforme ao redor do banner */
-  background-color: var(--cinza-claro); /* Usando a variável */
-  position: relative; /* Necessário para o posicionamento do card */
-  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
-  margin-left: 20px; /* Aumenta a margem esquerda */
-  margin-right: 20px; /* Aumenta a margem direita */
+  align-items: center; 
+  justify-content: center; /* Alinhamento central para os outros itens */
+  padding: 40px; 
+  background-color: var(--cinza-claro); 
+  position: relative; 
+  flex-wrap: wrap; 
+  margin-left: 20px; 
+  margin-right: 20px; 
 }
 
 /* Texto de introdução */
 .intro-text {
-  max-width: 35%; /* Limita a largura do texto de introdução */
-  text-align: left; /* Alinha o texto à esquerda */
-  margin: 0; /* Remove margens padrão */
+  max-width: 35%; 
+  text-align: left; 
+  margin: 0; 
 }
 
 /* Título do texto de introdução */
 .intro-text h1 {
-  font-size: var(--titulos-maiores); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
-  margin-bottom: 20px; /* Espaçamento abaixo do título reduzido */
+  font-size: var(--titulos-maiores); 
+  color: var(--azul-escuro); 
+  margin-bottom: 20px; 
   font-family: var(--montserrat);
 }
 
 /* Parágrafo do texto de introdução */
 .intro-text p {
-  font-size: var(--paragrafos); /* Usando a variável */
-  color: var(--cinza-escuro); /* Usando a variável */
-  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
   font-family: var(--montserrat);
+}
+
+/* Container para o botão */
+.orcamento-container {
+  display: flex; /* Usar flexbox para permitir o posicionamento */
+  justify-content: flex-start; /* Posiciona o conteúdo à esquerda */
+  width: 100%; /* Para ocupar a largura total do contêiner pai */
+  margin-top: 20px; /* Espaçamento superior */
 }
 
 /* Botão de orçamento */
 .orcamento-btn {
-  background-color: #ffffff; /* Cor de fundo do botão */
-  color: #1A154B; /* Cor do texto */
-  padding: 12px 24px; /* Aumenta o padding para um botão mais visível */
-  text-decoration: none; /* Remove o sublinhado */
-  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
-  display: inline-block; /* Ajusta o botão para alinhamento */
-  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
-  font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
-  margin-top: 20px; /* Espaçamento acima do botão */
-  font-family: var(--montserrat); /* Usando a variável */
+  background-color: #1A154B; /* Cor de fundo padrão */
+  color: #ffffff; /* Cor da escrita padrão */
+  padding: 12px 24px; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  transition: background-color 0.3s, transform 0.3s; 
+  display: inline-block; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  font-family: var(--montserrat); 
 }
 
 /* Hover do botão */
 .orcamento-btn:hover {
-  background-color: #333366; /* Cor de fundo no hover */
-  color:#ffffff;
-  transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
+  background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+  color: #1A154B; /* Cor da escrita ao passar o mouse */
+  transform: translateY(-2px); 
 }
 
 /* Imagem de introdução */
 .intro-image {
-  width: 400px; /* Largura fixa para o container da imagem */
-  height: 400px; /* Altura fixa para manter a imagem quadrada */
+  width: 500px; 
+  height: auto; 
   display: flex;
-  justify-content: center; /* Centraliza a imagem horizontalmente */
-  align-items: center; /* Alinha a imagem ao topo */
-  margin-top: 100px; /* Espaçamento acima da imagem */
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 100px; 
 }
 
-/* Imagem de introdução */
+/* Imagem de introdução com aspect-ratio */
 .intro-image img {
-  width: 100%; /* Faz a imagem ocupar 100% do container */
-  height: 100%; /* Faz a imagem ocupar 100% do container */
-  object-fit: cover; /* Corta a imagem para preencher o espaço */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .intro-banner {
-    flex-direction: column; /* Muda o layout para coluna em telas menores */
-    text-align: center; /* Centraliza o texto em telas menores */
+    flex-direction: column; 
+    text-align: center; 
   }
   
   .intro-text {
-    max-width: 100%; /* Largura total em telas menores */
-    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    max-width: 100%; 
+    margin-bottom: 20px; 
   }
   
   .intro-image {
-    max-width: 80%; /* Largura ajustada da imagem em telas menores */
+    max-width: 80%; 
   }
 }
 
 @media (max-width: 480px) {
   .intro-text h1 {
-    font-size: 2rem; /* Ajusta o tamanho da fonte do título para telas pequenas */
+    font-size: 2rem; 
   }
   
   .intro-text p {
-    font-size: var(--paragrafos); /* Usando a variável */
+    font-size: var(--paragrafos); 
   }
 }

@@ -7,7 +7,7 @@
   color: #FFFFFF; /* Define a cor do texto como branca */
   position: relative;
   overflow: hidden; /* Garante que nada saia da área definida */
-  min-height: 500px; /* Ajusta a altura mínima do footer */
+  min-height: 400px; /* Ajusta a altura mínima do footer */
 }
 
 .footer-left, .footer-right {
@@ -75,28 +75,27 @@
 .footer-right p {
   color: #ffffff; /* Cor do texto */
   font-size: 1rem; /* Tamanho da fonte do texto */
-  margin-bottom: 2px; /* Espaçamento abaixo do parágrafo */
+  margin-bottom: 12px; /* Espaçamento abaixo do parágrafo */
   font-family: var(--montserrat); /* Usando a variável */
 }
 
 .footer-right .btn {
-  background-color: #ffffff;
-  color: #1A154B;
-  padding: 12px 24px; /* Aumenta o padding para um botão mais visível */
-  text-decoration: none;
-  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
-  display: inline-block;
-  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
-  font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
-  margin-top: 20px;
-  font-family: var(--montserrat); /* Usando a variável */
+  background-color: #ffffff; /* Cor de fundo padrão */
+  color: #1A154B; /* Cor da escrita padrão */
+  padding: 12px 24px; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  transition: background-color 0.3s, transform 0.3s; 
+  display: inline-block; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  font-family: var(--montserrat); 
 }
 
 .footer-right .btn:hover {
-  background-color: #333366;
-  color:#FFFFFF;
-  transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
+  background-color: #1A154B; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor da escrita ao passar o mouse */
+  transform: translateY(-2px); 
 }
 
 /* Container da imagem de fundo */

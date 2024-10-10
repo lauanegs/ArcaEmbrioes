@@ -1,7 +1,7 @@
 /* Container para a lista de cards */
 .lista-cards {
     max-width: 1208px;
-    margin: 20px auto; /* Centraliza horizontalmente */
+    margin: 40px auto; /* Centraliza horizontalmente */
     display: flex;
     justify-content: space-between; /* Espaça as colunas igualmente */
     align-items: flex-start; /* Alinha as colunas no topo */
@@ -14,6 +14,23 @@
     text-align: center; /* Centraliza o texto dentro das colunas */
     font-family: var(--montserrat); /* Fonte para as colunas */
     color: var(--cinza-escuro); /* Cor do texto */
+}
+
+/* Títulos dentro das colunas */
+.coluna h2 {
+    font-size: 3rem; /* Tamanho de título */
+    color: var(--azul-escuro); /* Cor do título */
+    font-family: var(--montserrat); /* Fonte usada */
+    margin-bottom: 20px;
+}
+
+/* Descrição dentro das colunas */
+.coluna p {
+    font-size: var(--paragrafos); /* Tamanho do texto */
+    color: var(--quase_preto); /* Cor da descrição */
+    margin-bottom: 20px; /* Espaçamento entre o parágrafo e o próximo conteúdo */
+    font-family: var(--montserrat); /* Fonte usada */
+    line-height: 1.6; /* Melhor espaçamento entre as linhas */
 }
 
 /* Linha separadora */

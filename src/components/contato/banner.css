@@ -17,18 +17,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: var(--montserrat); /* Fonte para o banner */
-    color: #fff; /* Cor do texto */
+    font-family: var(--montserrat); 
+    color: #fff; 
 }
 
 /* Estilo para textos dentro do banner */
 .banner-title {
-    font-size: 3rem; /* Tamanho do título */
+    font-size: 3rem; 
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .banner-subtitle {
-    font-size: 1.2rem; /* Tamanho do subtítulo */
+    font-size: 1.2rem; 
     text-align: center;
 }

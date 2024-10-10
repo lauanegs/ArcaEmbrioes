@@ -37,15 +37,21 @@
   }
   
   .contact-buttons3 .btn {
-    background-color: #1A154B;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    background-color: #1A154B; /* Cor de fundo padrão */
+    color: #ffffff; /* Cor da escrita padrão */
+    padding: 12px 24px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    display: inline-block; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    font-family: var(--montserrat);
   }
   
   .contact-buttons3 .btn:hover {
-    background-color: #333366;
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #1A154B; /* Cor da escrita ao passar o mouse */
+    transform: translateY(-2px);
   }
   

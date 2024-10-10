@@ -1,75 +1,77 @@
 /* Estilo para a seção principal */
 .structure {
-  padding: 40px 20px; /* Padding para a seção */
-  background-color: var(--cinza-claro); /* Usando a variável */
-  text-align: center; /* Alinha o texto ao centro */
+  padding: 40px 20px; 
+  background-color: var(--cinza-claro); 
+  text-align: center; 
 }
 
 /* Título da seção */
 .structure h2 {
-  font-size: var(--titulos); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-  font-family: var(--montserrat); /* Usando a variável */
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 10px; 
+  font-family: var(--montserrat); 
 }
 
 /* Subtítulo da seção */
 .structure-subtitle {
-  font-size: var(--paragrafos); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
-  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
-  max-width: 800px; /* Limita a largura do subtítulo */
-  margin-left: auto; /* Centraliza o subtítulo horizontalmente */
-  margin-right: auto; /* Centraliza o subtítulo horizontalmente */
-  font-family: var(--montserrat); /* Usando a variável */
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px;
+  margin-left: auto; 
+  margin-right: auto; 
+  font-family: var(--montserrat); 
 }
 
 /* Estilos para o container do cartão */
 .structure-card-container {
   display: flex;
-  justify-content: center; /* Centraliza o cartão horizontalmente */
+  justify-content: center; 
 }
 
 /* Estilos para o cartão grande */
 .structure-card {
   display: flex;
-  align-items: center; /* Alinha a imagem e o conteúdo verticalmente */
-  background-color: var(--branco); /* Usando a variável */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
-  padding: 0; /* Remover padding para que a imagem cubra as bordas */
-  max-width: 800px; /* Largura máxima do cartão */
-  margin: 0 auto; /* Centraliza o cartão na tela */
-  overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
+  align-items: center;
+  background-color: var(--branco); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 0; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  overflow: hidden; 
 }
 
 /* Estilo para a imagem dentro do cartão */
 .structure-card-image {
-  width: 50%; /* Aumenta a largura da imagem para 50% */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px 0 0 8px; /* Bordas arredondadas apenas no canto esquerdo */
-  margin-right: 0; /* Remove o espaçamento à direita da imagem */
-  position: relative; /* Necessário para ajustes de posicionamento */
-  left: 0; /* Garante que a imagem comece na borda esquerda */
+  width: 50%; 
+  height: auto; 
+  border-radius: 8px 0 0 8px; 
+  margin-right: 0; 
+  position: relative; 
+  left: 0; 
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* Estilo para o conteúdo do cartão */
 .structure-card-content {
-  text-align: center; /* Centraliza o texto */
-  padding: 20px; /* Adiciona padding ao conteúdo */
+  text-align: center; 
+  padding: 20px; 
 }
 
 /* Títulos dentro do cartão */
 .structure-card-content h3 {
-  font-size: var(--titulos); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-  font-family: var(--montserrat); /* Usando a variável */
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 10px; 
+  font-family: var(--montserrat); 
 }
 
 /* Descrição dentro do cartão */
 .structure-description {
-  font-size: var(--paragrafos); /* Usando a variável */
-  color: #666666; /* Mantive a cor original */
-  font-family: var(--montserrat); /* Usando a variável */
+  font-size: var(--paragrafos); 
+  color: #666666; 
+  font-family: var(--montserrat); 
 }

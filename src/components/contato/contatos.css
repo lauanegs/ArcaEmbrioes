@@ -13,11 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF; /* Fundo branco */
-    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #FFFFFF; 
+    border-radius: 10px; 
     transition: background 0.3s;
-    font-family: var(--montserrat); /* Fonte para os contatos */
-    color: var(--cinza-escuro); /* Cor do texto padrão */
+    font-family: var(--montserrat); 
+    color: var(--cinza-escuro); 
 }
 
 /* Estilo do cabeçalho do contato */
@@ -26,24 +26,24 @@
 /* Estilo do texto dentro de contato */
 .contato p {
     text-align: center; 
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 1rem; 
 }
 
 /* Efeito hover nos contatos */
 .contato:hover {
-    background-color: #124A6C; /* Fundo escuro no hover */
-    color: #FFFFFF; /* Texto branco no hover */
+    background-color: var(--azul_escuro); 
+    color: #FFFFFF; 
 }
 
 /* Estilo do ícone */
 .icon {
     padding: 10px;
-    font-size: 1.5rem; /* Tamanho do ícone */
+    font-size: 1.5rem; 
 }
 
 /* Estilo do nome do contato */
 .nome-contato {
     padding: 20px;
-    font-weight: bold; /* Destaque para o nome */
-    font-size: 1.2rem; /* Tamanho do nome */
+    font-weight: bold; 
+    font-size: 1.2rem; 
 }

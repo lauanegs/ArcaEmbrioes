@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%; /* Usa toda a largura da tela */
+  width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,14 +20,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(26, 21, 75, 0.5); /* Ajuste a cor e opacidade da sombra conforme necessário */
-  z-index: 1; /* Garante que a sombra fique atrás do conteúdo do banner */
+  background: rgba(26, 21, 75, 0.5); 
+  z-index: 1; 
 }
 
 /* Ajusta o conteúdo do banner para não sobrepor a sombra */
 .banner-equipe > * {
   position: relative;
-  z-index: 2; /* Garante que o conteúdo fique acima da sombra */
+  z-index: 2; 
 }
 
 /** RESPONSIVIDADE BANNER SOBRE **/
@@ -63,7 +63,7 @@
 @media (max-width: 575px) {
   .banner-equipe {
     background-size: cover;
-    background-position: top center; /* Ajustar se necessário */
+    background-position: top center; 
   }
 }
 
@@ -76,14 +76,14 @@
   color: white;
   font-weight: bold;
   font-size: 5rem;
-  font-family: var(--montserrat); /* Usando a variável */
+  font-family: var(--montserrat); 
 }
 
 .banner-equipe p {
   text-align: center;
   font-size: 1rem;
   color: white;
-  font-family: var(--montserrat); /* Usando a variável */
+  font-family: var(--montserrat); 
 }
 
 .banner-equipe button {
@@ -96,5 +96,5 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
-  font-family: var(--montserrat); /* Usando a variável */
+  font-family: var(--montserrat); 
 }

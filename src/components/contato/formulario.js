@@ -7,32 +7,13 @@ export const Formulario = () => {
     const [assunto, setAssunto] = useState('');
     const [mensagem, setMensagem] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        const response = await fetch('./envia_email.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams({
-                nome,
-                email,
-                assunto,
-                mensagem
-            })
-        });
-
-        const result = await response.text();
-        alert(result); // Exibe o resultado da resposta do PHP
-    };
-
     return (
-        <form className="container-formulario" onSubmit={handleSubmit}> 
+        <form className="container-formulario" action="../email.php" method="POST">
             <div className="campo">
                 <p className="label">Nome completo:</p>
                 <input 
                     type="text" 
+                    name="name" 
                     required 
                     value={nome} 
                     onChange={(e) => setNome(e.target.value)} 
@@ -42,6 +23,7 @@ export const Formulario = () => {
                 <p className="label">E-mail:</p>
                 <input 
                     type="email" 
+                    name="email" 
                     required 
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)} 
@@ -51,6 +33,7 @@ export const Formulario = () => {
                 <p className="label">Assunto:</p>
                 <input 
                     type="text" 
+                    name="subject" 
                     required 
                     value={assunto} 
                     onChange={(e) => setAssunto(e.target.value)} 
@@ -60,13 +43,14 @@ export const Formulario = () => {
                 <p className="label">Mensagem: </p>
                 <textarea 
                     id="mensagem" 
+                    name="message" 
                     maxLength={250} 
                     required 
                     value={mensagem} 
                     onChange={(e) => setMensagem(e.target.value)} 
                 />
             </div>
-            <button className="btn-form" type="submit">Enviar mensagem</button>
+            <button className="btn-form" type="submit">Enviar</button>
         </form>
     );
 };

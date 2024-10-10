@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%; /* Usa toda a largura da tela */
+  width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,25 +20,24 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(26, 21, 75, 0.5); /* Ajuste a cor e opacidade da sombra conforme necessário */
-  z-index: 1; /* Garante que a sombra fique atrás do conteúdo do banner */
+  background: rgba(26, 21, 75, 0.5); 
 }
 
 /* Ajusta o conteúdo do banner para não sobrepor a sombra */
 .banner-home > * {
   position: relative;
-  z-index: 2; /* Garante que o conteúdo fique acima da sombra */
+  z-index: 2; 
 }
 
 /* Logo.css */
 .logo-container {
-  text-align: center; /* Centraliza a logo */
-  margin: 20px; /* Espaçamento ao redor da logo */
+  text-align: center; 
+  margin: 20px; 
 }
 
 .logo-image {
-  max-width: 100%; /* Para garantir que a imagem não exceda a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; 
+  height: auto; 
 }
 
 /** RESPONSIVIDADE BANNER SOBRE **/
@@ -75,7 +74,7 @@
 @media (max-width: 575px) {
   .banner-home {
     background-size: cover;
-    background-position: top center; /* Ajustar se necessário */
+    background-position: top center; 
   }
 }
 
@@ -83,16 +82,16 @@
 
 .banner-home h1 {
   padding: 5px;
-  color: var(--branco); /* Usando a variável */
+  color: var(--branco); 
   font-weight: bold;
-  font-size: var(--titulos_maiores); /* Usando a variável */
+  font-size: var(--titulos_maiores); 
   font-family: var(--montserrat);
 }
 
 .banner-home p {
   text-align: center;
-  font-size: var(--titulos); /* Usando a variável */
-  color: var(--branco); /* Usando a variável */
+  font-size: var(--titulos); 
+  color: var(--branco); 
 }
 
 .banner-home button {
@@ -100,9 +99,9 @@
   height: 48px;
   width: 250px;
   background-color: transparent;
-  border: 1px solid var(--branco); /* Usando a variável */
+  border: 1px solid var(--branco); 
   border-radius: 12px;
-  color: var(--branco); /* Usando a variável */
-  font-size: var(--paragrafos); /* Usando a variável */
+  color: var(--branco); 
+  font-size: var(--paragrafos); 
   font-weight: 400;
 }

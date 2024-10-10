@@ -2,20 +2,22 @@
 .container-formulario {
     width: 100%;
     height: 90%;
-    background-color: #1A154B; /* Fundo escuro */
+    background-color: #1A154B; 
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--montserrat); /* Fonte do formulário */
+    font-family: var(--montserrat);
+    margin-bottom: auto;
 }
 
 /* Estilo das labels */
 .label {
-    color: #fff; /* Texto branco */
+    color: #fff; 
     margin-bottom: 10px;
-    font-size: 1.1rem; /* Tamanho da fonte */
+    font-size: 1.1rem; 
+    text-align: start;
 }
 
 /* Estilo dos campos */
@@ -32,9 +34,9 @@
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: #5E5B81; /* Fundo dos campos */
-    color: #fff; /* Texto branco */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #5E5B81; 
+    color: #fff; 
+    font-size: 1rem; 
 }
 
 /* Estilo específico para a mensagem */
@@ -46,8 +48,8 @@
 /* Efeito de foco nos campos */
 .campo input:focus, textarea:focus {
     border: 1px solid black;
-    background-color: #fff; /* Fundo claro */
-    color: #000; /* Texto escuro */
+    background-color: #fff; 
+    color: #000; 
 }
 
 /* Estilo do botão */
@@ -56,20 +58,20 @@
     height: 3rem;
     border: none;
     border-radius: 10px;
-    background-color: #5E5B81; /* Fundo do botão */
-    color: #FFFFFF; /* Texto branco */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    background-color: #1A154B;
+    color: #FFFFFF; 
+    font-size: 1rem; 
+    transition: background-color 0.3s, color 0.3s; 
     font-family: var(--montserrat);
+    text-decoration: underline;
 }
 
 /* Efeito hover no botão */
-.btn-form:hover {
-    background-color: #FFFFFF; /* Fundo branco */
-    color: #000000; /* Texto escuro */
+.btn-form:hover { 
+    color: #808080; 
 }
 
 /* Efeito ativo no botão */
 .btn-form:active {
-    background: #124A6C; /* Fundo escuro */
+    background-color: #808080;
 }

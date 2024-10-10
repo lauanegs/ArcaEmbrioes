@@ -14,11 +14,11 @@
 
 /* Estilo do título principal */
 .title {
-    color: #fff; /* Texto branco */
-    font-size: 4.2rem; /* Tamanho grande da fonte */
+    color: #fff; 
+    font-size: 4.2rem; 
     margin-bottom: 1.5rem;
     text-align: center;
-    font-family: var(--montserrat); /* Fonte do título */
+    font-family: var(--montserrat); 
 }
 
 /* Container para o subtítulo */
@@ -28,8 +28,8 @@
 
 /* Estilo do subtítulo */
 .subtitle {
-    color: var(--cinza-escuro); /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
+    color: var(--cinza-escuro); 
+    font-size: 1rem; 
     text-align: center;
-    font-family: var(--montserrat); /* Fonte do subtítulo */
+    font-family: var(--montserrat); 
 }

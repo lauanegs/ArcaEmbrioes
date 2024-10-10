@@ -1,6 +1,6 @@
 const tamanhos = {
     titulos_maiores: '4rem',
-    titulos: '1.4rem',
+    titulos: '1.8rem',
     paragrafos: '1.2rem',
 };
 

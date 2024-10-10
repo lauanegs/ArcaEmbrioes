@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../../assets/2021.jpg';
+import logoImg from '../../assets/bannerSobre.jpg';
 import './OutroBanner.css';
 
 const OutroBanner = () => {

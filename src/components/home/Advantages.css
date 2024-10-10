@@ -1,9 +1,37 @@
-/* Container principal das vantagens */
+/* Estilo para a seção de vantagens */
+.advantages {
+  padding: 40px 20px; /* Padding para a seção */
+  background-color: var(--cinza-claro); /* Usando a variável */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Título da seção de vantagens */
+.advantages h2 {
+  font-size: var(--titulos); /* Usando a variável */
+  color: var(--azul-escuro); /* Usando a variável */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-family: var(--montserrat); /* Usando a variável */
+}
+
+/* Subtítulo da seção de vantagens */
+.advantages-subtitle {
+  font-size: var(--paragrafos); /* Usando a variável */
+  color: var(--quase_preto); /* Usando a variável */
+  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+  max-width: 800px; /* Limita a largura do subtítulo */
+  margin-left: auto; /* Centraliza o subtítulo horizontalmente */
+  margin-right: auto; /* Centraliza o subtítulo horizontalmente */
+  font-family: var(--montserrat); /* Usando a variável */
+}
+
+/* Estilos para o container das vantagens */
 .advantages-container {
+  display: flex; /* Certifique-se de que o container é flex */
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 40px; /* Aumente o espaço entre as colunas */
   flex-wrap: wrap;
+  padding-top: 40px;
 }
 
 /* Linhas de vantagens */
@@ -11,8 +39,9 @@
 .advantages-row {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px; /* Aumente o espaço entre os itens em cada linha */
   flex-wrap: wrap;
+  margin-bottom: 30px; /* Adicione margem inferior para espaçamento entre linhas */
 }
 
 /* Item de vantagem */
@@ -20,47 +49,36 @@
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px; /* Mantido, mas você pode aumentar se quiser mais espaço dentro de cada item */
   width: 300px;
 }
 
 /* Estilo do SVG dentro do item de vantagem */
 .advantage-item svg {
-  background-color: rgba(26, 21, 75, 0.5);
+  background-color: rgba(26, 21, 75, 0.3);
   border-radius: 50%;
-  padding: 15px;
-  color: var(--branco); /* Usando a variável */
+  padding: 20px;
+  color: var(--branco); 
   width: 80px;
   height: 80px;
 }
 
-/* Estilo do conteúdo dentro do item de vantagem */
+/* Estilo para o conteúdo dentro do item de vantagem */
 .advantage-item div {
   text-align: left;
 }
 
-/* Título dentro do item de vantagem */
+/* Títulos dentro do item de vantagem */
 .advantage-item h3 {
   font-size: var(--titulos); /* Usando a variável */
-  margin-bottom: 5px;
+  color: var(--azul-escuro); /* Usando a variável */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
   font-family: var(--montserrat); /* Usando a variável */
 }
 
-/* Parágrafo dentro do item de vantagem */
+/* Descrição dentro do item de vantagem */
 .advantage-item p {
   font-size: var(--paragrafos); /* Usando a variável */
-  color: var(--cinza-claro); /* Usando a variável */
-  font-family: var(--montserrat); /* Usando a variável */
-}
-
-/* Subtítulo das vantagens */
-.advantages-subtitle {
-  font-size: var(--paragrafos); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
-  margin-bottom: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--quase_preto);
   font-family: var(--montserrat); /* Usando a variável */
 }
