@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between; /* Espaça as colunas igualmente */
     align-items: flex-start; /* Alinha as colunas no topo */
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha */
 }
 
 /* Estilo para cada coluna */
@@ -14,6 +15,7 @@
     text-align: center; /* Centraliza o texto dentro das colunas */
     font-family: var(--montserrat); /* Fonte para as colunas */
     color: var(--cinza-escuro); /* Cor do texto */
+    min-width: 300px; /* Largura mínima para as colunas */
 }
 
 /* Títulos dentro das colunas */
@@ -40,4 +42,39 @@
     height: auto; /* Altura automática para se ajustar à coluna */
     min-height: 100px; /* Define uma altura mínima para a linha */
     margin: 0 20px; /* Margem para dar espaço entre as colunas */
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .lista-cards {
+        flex-direction: column; /* Colunas em coluna em telas menores */
+        align-items: center; /* Centraliza colunas verticalmente */
+    }
+
+    .coluna {
+        min-width: 100%; /* Colunas ocupam 100% da largura */
+        margin-bottom: 20px; /* Espaçamento entre as colunas */
+    }
+
+    .separator {
+        display: none; /* Esconde a linha separadora em telas pequenas */
+    }
+
+    .coluna h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+    }
+
+    .coluna p {
+        font-size: var(--paragrafos-mobile); /* Tamanho do texto para dispositivos móveis */
+    }
+}
+
+@media (max-width: 600px) {
+    .coluna h2 {
+        font-size: 2rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .coluna p {
+        font-size: var(--paragrafos-mobile); /* Tamanho do texto para dispositivos móveis */
+    }
 }

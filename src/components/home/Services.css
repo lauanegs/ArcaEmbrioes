@@ -48,7 +48,7 @@
   color: var(--azul-escuro); /* Usando a variável */
 }
 
-.card h3 {
+.card h2 {
   font-size: var(--paragrafos); /* Usando a variável */
   margin-top: 5px;
   color: var(--quase_preto); /* Usando a variável */

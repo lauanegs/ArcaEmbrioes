@@ -7,7 +7,6 @@ const BannerSobre = () => {
       <h1>Conheça nossa história e nossa empresa</h1>
       <p>Localizada na cidade de Patos de Minas, estamos prontos para atendê-lo!
       Venha nos fazer uma visita.</p>
-      <button>Entre em contato</button>
     </div>
 
   );

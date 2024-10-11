@@ -8,7 +8,6 @@ const BannerHome = () => {
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo-image" />
       </div>
-      <button>Saiba mais</button>
     </div>
 
   );

@@ -6,7 +6,6 @@ const BannerEquipe = () => {
     <div className="banner-equipe">
       <h1>Conheça a nossa equipe!</h1>
       <p>Oferecemos os melhores profissionais do mercado, que sempre atendem os clientes com educação e dedicação.</p>
-      <button>Entre em contato</button>
     </div>
   );
 }

@@ -107,6 +107,7 @@
   height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
   overflow: hidden;
   z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */
+  transition: opacity 0.5s ease; /* Adiciona transição suave para a opacidade */
 }
 
 .footer-banner img {
@@ -114,4 +115,46 @@
   height: 100%;
   object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
   opacity: 1; /* Reduz a opacidade da imagem para não competir com o texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-height: 300px; /* Ajusta a altura mínima */
+  }
+
+  .footer-left, .footer-right {
+    margin-left: 0; /* Remove a margem à esquerda */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .footer-left h2 {
+    font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+
+  .footer-left p,
+  .footer-right p {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+  }
+
+  .footer-banner {
+    opacity: 0; /* Oculta a imagem */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-left h2 {
+    font-size: 1.2rem; /* Tamanho ainda menor do título */
+  }
+
+  .footer-right h2 {
+    font-size: 1.2rem; /* Tamanho ainda menor do título */
+  }
+
+  .footer-left p,
+  .footer-right p {
+    font-size: 0.8rem; /* Tamanho ainda menor do texto */
+  }
 }

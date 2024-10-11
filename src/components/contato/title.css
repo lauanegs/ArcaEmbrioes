@@ -14,8 +14,8 @@
 
 /* Estilo do título principal */
 .title {
-    color: #fff; 
-    font-size: 4.2rem; 
+    color: var(--azul_escuro); 
+    font-size: var(--titulos_maiores); 
     margin-bottom: 1.5rem;
     text-align: center;
     font-family: var(--montserrat); 
@@ -28,8 +28,8 @@
 
 /* Estilo do subtítulo */
 .subtitle {
-    color: var(--cinza-escuro); 
-    font-size: 1rem; 
+    color: var(--quase_preto); 
+    font-size: var(--paragrafos); 
     text-align: center;
     font-family: var(--montserrat); 
 }

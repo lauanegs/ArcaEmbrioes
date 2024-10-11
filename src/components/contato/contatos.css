@@ -5,6 +5,10 @@
     justify-content: center; 
     gap: 20px; 
     flex-wrap: wrap; 
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    align-items: stretch; /* Faz os itens ocuparem a mesma altura */
+    z-index: 1000; /* Garante que o contêiner fique acima de outros elementos */
 }
 
 /* Estilo de cada contato */
@@ -15,35 +19,72 @@
     align-items: center;
     background-color: #FFFFFF; 
     border-radius: 10px; 
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s; /* Adiciona transição de transformação */
     font-family: var(--montserrat); 
     color: var(--cinza-escuro); 
+    width: 300px; /* Largura fixa para desktop */
+    max-width: 90%; /* Largura máxima para se ajustar em telas menores */
+    min-height: 200px; /* Altura mínima para o card */
+    flex-grow: 1; /* Permite que o card cresça */
+    flex-basis: 220px; /* Base de altura para o card */
+    padding: 15px; /* Adiciona padding interno ao cartão */
 }
-
-/* Estilo do cabeçalho do contato */
-
 
 /* Estilo do texto dentro de contato */
 .contato p {
     text-align: center; 
     font-size: 1rem; 
+    margin: 10px 0; /* Margem para o texto */
 }
 
 /* Efeito hover nos contatos */
 .contato:hover {
     background-color: var(--azul_escuro); 
     color: #FFFFFF; 
+    transform: scale(1.05); /* Aumenta ligeiramente o cartão ao passar o mouse */
 }
 
-/* Estilo do ícone */
-.icon {
-    padding: 10px;
-    font-size: 1.5rem; 
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    .container-contatos {
+        padding: 10px; /* Reduz o padding para não ficar apertado */
+    }
+
+    .contato {
+        width: 90%; /* Ajusta a largura em dispositivos menores */
+        max-width: 100%; /* Permite ocupar 100% em telas muito pequenas */
+        min-height: 150px; /* Ajusta a altura mínima para telas menores */
+    }
+
+    .contato p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte em telas menores */
+        margin: 5px 0; /* Reduz a margem para um espaçamento mais leve */
+    }
+
+    .nome-contato {
+        font-size: 1rem; /* Reduz o tamanho da fonte do nome */
+    }
+
+    .icon {
+        font-size: 1.2rem; /* Reduz o tamanho do ícone */
+    }
 }
 
-/* Estilo do nome do contato */
-.nome-contato {
-    padding: 20px;
-    font-weight: bold; 
-    font-size: 1.2rem; 
+/* Media Queries para telas muito pequenas */
+@media (max-width: 480px) {
+    .contato {
+        min-height: 120px; /* Altura mínima ainda menor para telas pequenas */
+    }
+
+    .nome-contato {
+        font-size: 0.9rem; /* Tamanho da fonte do nome ainda menor */
+    }
+
+    .icon {
+        font-size: 1rem; /* Tamanho do ícone ainda menor */
+    }
+
+    .container-contatos {
+        gap: 10px; /* Reduz o espaço entre os cartões */
+    }
 }

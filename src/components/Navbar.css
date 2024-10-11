@@ -1,7 +1,7 @@
 /* Navbar styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza a logo */
   align-items: center;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.0); /* Transparente inicialmente */
@@ -47,13 +47,13 @@
 
 .nav-links {
   list-style: none;
-  display: flex;
+  display: flex; /* Flexbox para alinhar itens lado a lado */
   margin: 0; /* Remover margem padrão */
-  margin-right: 20px; /* Mover links para a direita */
+  margin-left: auto; /* Empurrar links para a direita */
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 15px; /* Margem entre os links */
 }
 
 .nav-links a {
@@ -84,4 +84,52 @@
 
 .navbar.scrolled .social-icons a img {
   filter: brightness(1); /* Manter ícones sociais na cor escura (não alterar brilho) quando rolada */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Mudar para coluna em telas menores */
+    align-items: center; /* Centralizar a navbar */
+    padding: 10px; /* Ajustar o padding */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Espaço abaixo do logo */
+  }
+
+  .nav-links {
+    display: flex; /* Manter como flex para alinhamento lateral */
+    flex-direction: row; /* Manter a orientação horizontal */
+    align-items: center; /* Centralizar os links */
+    margin: 0; /* Remover margens padrão */
+    justify-content: center; /* Centralizar os links */
+    width: 100%; /* Garantir que ocupe toda a largura */
+  }
+
+  .nav-links li {
+    margin: 0 10px; /* Margem entre os links */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+  }
+
+  .social-icons {
+    display: none; /* Ocultar ícones sociais */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px; /* Reduzir tamanho do logo em telas muito pequenas */
+  }
+
+  .nav-links a {
+    font-size: 12px; /* Diminuir ainda mais o tamanho da fonte */
+  }
+
+  .social-icons a img {
+    height: 20px; /* Reduzir tamanho dos ícones sociais */
+  }
 }
