@@ -11,7 +11,7 @@ export const Title = () => {
                 <h1 className="title">{title}</h1>
             </div>
             <div className="container-subtitle">
-                <h1 className="subtitle">{subTitle}</h1>
+                <p className="subtitle">{subTitle}</p>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../../assets/2021.jpg';
+import logoImg from '../../assets/equipamento.jpg';
 import './IntroEquipe.css';
 
 const OutroBanner = () => {
@@ -7,11 +7,10 @@ const OutroBanner = () => {
     <section className="outro-banner">
       <div className="outro-image">
         <img src={logoImg} alt="Logo" />
-        {/* Card removido */}
       </div>
       <div className="outro-text">
-        <h1>A melhor empresa para cuidar do seu material genético!</h1>
-        <p>Contamos com equipamentos modernos, em um local totalmente esterilizado permitindo os melhores resultados.</p>
+        <h1>Temos profissionais incríveis para te auxiliar</h1>
+        <p>Estamos sempre empenhados em fornecer o melhor atendimento a você. </p>
       </div>
     </section>
   );

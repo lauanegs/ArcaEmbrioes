@@ -1,19 +1,18 @@
-/* Estilos gerais para seções */
 .pride {
   padding: 40px 20px;
   text-align: center;
 }
 
 .services h2 {
-  font-size: var(--titulos); /* Usando a variável */
-  color: var(--azul-escuro); /* Usando a variável */
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
   margin-bottom: 10px;
   font-family: var(--montserrat);
 }
 
 .services-subtitle {
-  font-size: var(--paragrafos); /* Usando a variável */
-  color: var(--quase_preto); /* Usando a variável */
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
   margin-bottom: 20px;
   max-width: 800px;
   margin-left: auto;
@@ -35,7 +34,7 @@
   height: 280px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: var(--branco); /* Usando a variável */
+  background-color: var(--branco); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,12 +44,12 @@
 .card svg {
   font-size: 20px;
   margin-bottom: 10px;
-  color: var(--azul-escuro); /* Usando a variável */
+  color: var(--azul-escuro); 
 }
 
-.card h2 {
-  font-size: var(--paragrafos); /* Usando a variável */
+.card p {
+  font-size: var(--paragrafos); 
   margin-top: 5px;
-  color: var(--quase_preto); /* Usando a variável */
+  color: var(--quase_preto); 
   font-family: var(--montserrat);
 }

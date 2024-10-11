@@ -1,80 +1,74 @@
-/* Container para a lista de cards */
 .lista-cards {
     max-width: 1208px;
-    margin: 40px auto; /* Centraliza horizontalmente */
+    margin: 40px auto; 
     display: flex;
-    justify-content: space-between; /* Espaça as colunas igualmente */
-    align-items: flex-start; /* Alinha as colunas no topo */
-    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha */
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
 }
 
-/* Estilo para cada coluna */
 .coluna {
-    flex: 1; /* Cada coluna ocupará espaço igual */
-    padding: 20px; /* Padding interno para as colunas */
-    text-align: center; /* Centraliza o texto dentro das colunas */
-    font-family: var(--montserrat); /* Fonte para as colunas */
-    color: var(--cinza-escuro); /* Cor do texto */
-    min-width: 300px; /* Largura mínima para as colunas */
+    flex: 1; 
+    padding: 20px; 
+    text-align: center; 
+    font-family: var(--montserrat); 
+    color: var(--cinza-escuro); 
+    min-width: 300px; 
 }
 
-/* Títulos dentro das colunas */
 .coluna h2 {
-    font-size: 3rem; /* Tamanho de título */
-    color: var(--azul-escuro); /* Cor do título */
-    font-family: var(--montserrat); /* Fonte usada */
+    font-size: 3rem; 
+    color: var(--azul-escuro); 
+    font-family: var(--montserrat); 
     margin-bottom: 20px;
 }
 
-/* Descrição dentro das colunas */
 .coluna p {
-    font-size: var(--paragrafos); /* Tamanho do texto */
-    color: var(--quase_preto); /* Cor da descrição */
-    margin-bottom: 20px; /* Espaçamento entre o parágrafo e o próximo conteúdo */
-    font-family: var(--montserrat); /* Fonte usada */
-    line-height: 1.6; /* Melhor espaçamento entre as linhas */
+    font-size: var(--paragrafos); 
+    color: var(--quase_preto); 
+    margin-bottom: 20px; 
+    font-family: var(--montserrat); 
+    line-height: 1.6; 
 }
 
-/* Linha separadora */
 .separator {
-    width: 2px; /* Largura da linha separadora */
-    background-color: var(--azul-escuro); /* Cor azul escura */
-    height: auto; /* Altura automática para se ajustar à coluna */
-    min-height: 100px; /* Define uma altura mínima para a linha */
-    margin: 0 20px; /* Margem para dar espaço entre as colunas */
+    width: 2px; 
+    background-color: var(--azul-escuro); 
+    height: auto; 
+    min-height: 100px; 
+    margin: 0 20px; 
 }
 
-/* Responsividade */
 @media (max-width: 900px) {
     .lista-cards {
-        flex-direction: column; /* Colunas em coluna em telas menores */
-        align-items: center; /* Centraliza colunas verticalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .coluna {
-        min-width: 100%; /* Colunas ocupam 100% da largura */
-        margin-bottom: 20px; /* Espaçamento entre as colunas */
+        min-width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .separator {
-        display: none; /* Esconde a linha separadora em telas pequenas */
+        display: none; 
     }
 
     .coluna h2 {
-        font-size: 2.5rem; /* Reduz o tamanho do título */
+        font-size: 2.5rem; 
     }
 
     .coluna p {
-        font-size: var(--paragrafos-mobile); /* Tamanho do texto para dispositivos móveis */
+        font-size: var(--paragrafos-mobile); 
     }
 }
 
 @media (max-width: 600px) {
     .coluna h2 {
-        font-size: 2rem; /* Reduz ainda mais o tamanho do título */
+        font-size: 2rem; 
     }
 
     .coluna p {
-        font-size: var(--paragrafos-mobile); /* Tamanho do texto para dispositivos móveis */
+        font-size: var(--paragrafos-mobile); 
     }
 }

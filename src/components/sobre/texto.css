@@ -1,4 +1,3 @@
-/* Estilos para o banner de introdução */
 .outro-banner {
   display: flex;
   align-items: center; 
@@ -11,14 +10,12 @@
   margin-right: 20px; 
 }
 
-/* Texto de introdução */
 .outro-text {
   max-width: 35%; 
   text-align: left; 
   margin: 0; 
 }
 
-/* Título do texto de introdução */
 .outro-text h1 {
   font-size: var(--titulos-maiores); 
   color: var(--azul-escuro); 
@@ -26,7 +23,6 @@
   font-family: var(--montserrat);
 }
 
-/* Parágrafo do texto de introdução */
 .outro-text p {
   font-size: var(--paragrafos); 
   color: var(--cinza-escuro); 
@@ -34,7 +30,6 @@
   font-family: var(--montserrat);
 }
 
-/* Imagem de introdução */
 .outro-image {
   width: 500px; 
   height: auto; 
@@ -44,16 +39,14 @@
   margin-top: 100px; 
 }
 
-/* Imagem de introdução com aspect-ratio */
 .outro-image img {
   width: 100%; 
   height: auto; 
-  aspect-ratio: 1 / 1; /* Proporção de 1:1 (quadrada) */
+  aspect-ratio: 1 / 1; 
   object-fit: cover; 
   border-radius: 8px; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .outro-banner {
     flex-direction: column; 

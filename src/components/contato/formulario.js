@@ -9,7 +9,7 @@ export const Formulario = () => {
     const [status, setStatus] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Previne o comportamento padrão de recarregar a página
+        e.preventDefault();
 
         const formData = {
             name: nome,

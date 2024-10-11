@@ -1,103 +1,92 @@
-/* Container do formulário */
 .container-formulario {
-    width: 90%; /* Use porcentagem em vez de um valor fixo */
-    max-width: 600px; /* Defina uma largura máxima */
-    height: auto; /* Altere para auto para permitir ajuste de altura */
-    background-color: #1A154B; 
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    background-color: #1A154B;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: var(--montserrat);
-    margin: 20px auto; /* Centraliza e adiciona margem */
-    padding: 20px; /* Adiciona padding para o conteúdo interno */
-    box-sizing: border-box; /* Inclui padding na largura total */
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Estilo das labels */
 .label {
-    color: #fff; 
+    color: #fff;
     margin-bottom: 10px;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     text-align: start;
 }
 
-/* Estilo dos campos */
 .campo {
     padding: 10px;
-    width: 100%; /* Adiciona largura 100% para os campos */
+    width: 100%;
 }
 
-/* Estilo de input e textarea */
 .campo input, textarea {
-    width: 100%; /* Use 100% para ajustar à largura do container */
-    max-width: 500px; /* Define uma largura máxima */
+    width: 100%;
+    max-width: 500px;
     height: 2.2rem;
     margin: 0 auto;
     padding: 8px;
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: #5E5B81; 
-    color: #fff; 
-    font-size: 1rem; 
+    background-color: #5E5B81;
+    color: #fff;
+    font-size: 1rem;
 }
 
-/* Estilo específico para a mensagem */
 #mensagem {
     height: 200px;
     text-align: start;
 }
 
-/* Efeito de foco nos campos */
 .campo input:focus, textarea:focus {
     border: 1px solid black;
-    background-color: #fff; 
-    color: #000; 
+    background-color: #fff;
+    color: #000;
 }
 
-/* Estilo do botão */
 .btn-form {
-    width: 100%; /* Ajusta para 100% */
-    max-width: 200px; /* Define uma largura máxima */
+    width: 100%;
+    max-width: 200px;
     height: 3rem;
     border: none;
     border-radius: 10px;
     background-color: #1A154B;
-    color: #FFFFFF; 
-    font-size: 1rem; 
-    transition: background-color 0.3s, color 0.3s; 
+    color: #FFFFFF;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
     font-family: var(--montserrat);
     text-decoration: underline;
 }
 
-/* Efeito hover no botão */
-.btn-form:hover { 
-    color: #808080; 
+.btn-form:hover {
+    color: #5E5B81;
 }
 
-/* Efeito ativo no botão */
 .btn-form:active {
     background-color: #808080;
 }
 
-/* Media Queries para dispositivos menores */
 @media (max-width: 768px) {
     .label {
-        font-size: 1rem; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 1rem;
     }
 
     .campo input, textarea {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        font-size: 0.9rem;
     }
 
     .btn-form {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+        font-size: 0.9rem;
     }
 
-    /* Ajustes para a altura do textarea em telas menores */
     #mensagem {
-        height: 150px; /* Reduz a altura da mensagem em telas menores */
+        height: 150px;
     }
 }

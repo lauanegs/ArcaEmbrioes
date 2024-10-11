@@ -1,5 +1,5 @@
 import React from 'react';
-import './BannerServicos.css'; // Certifique-se de que o caminho está correto
+import './BannerServicos.css'; 
 
 const BannerServicos = () => {
   return (

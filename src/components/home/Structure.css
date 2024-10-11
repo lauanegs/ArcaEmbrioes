@@ -1,11 +1,9 @@
-/* Estilo para a seção principal */
 .structure {
   padding: 40px 20px; 
   background-color: var(--cinza-claro); 
   text-align: center; 
 }
 
-/* Título da seção */
 .structure h2 {
   font-size: var(--titulos); 
   color: var(--azul-escuro); 
@@ -13,7 +11,6 @@
   font-family: var(--montserrat); 
 }
 
-/* Subtítulo da seção */
 .structure-subtitle {
   font-size: var(--paragrafos); 
   color: var(--quase_preto); 
@@ -24,13 +21,11 @@
   font-family: var(--montserrat); 
 }
 
-/* Estilos para o container do cartão */
 .structure-card-container {
   display: flex;
   justify-content: center; 
 }
 
-/* Estilos para o cartão grande */
 .structure-card {
   display: flex;
   align-items: center;
@@ -43,7 +38,6 @@
   overflow: hidden; 
 }
 
-/* Estilo para a imagem dentro do cartão */
 .structure-card-image {
   width: 50%; 
   height: auto; 
@@ -55,13 +49,11 @@
   object-fit: cover;
 }
 
-/* Estilo para o conteúdo do cartão */
 .structure-card-content {
   text-align: center; 
   padding: 20px; 
 }
 
-/* Títulos dentro do cartão */
 .structure-card-content h3 {
   font-size: var(--titulos); 
   color: var(--azul-escuro); 
@@ -69,7 +61,6 @@
   font-family: var(--montserrat); 
 }
 
-/* Descrição dentro do cartão */
 .structure-description {
   font-size: var(--paragrafos); 
   color: #666666; 

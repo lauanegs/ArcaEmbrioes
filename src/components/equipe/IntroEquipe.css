@@ -1,4 +1,4 @@
-/* Estilos para o banner de introdução */
+
 .outro-banner {
   display: flex;
   align-items: center; 
@@ -9,40 +9,34 @@
   flex-wrap: wrap; 
 }
 
-/* Texto de introdução */
 .outro-text {
   max-width: 35%; 
   text-align: center; 
   margin-bottom: 20px; 
 }
 
-/* Título do texto de introdução */
 .outro-text h1 {
-  font-size: 2.5rem; 
-  color: #1A154B; 
+  font-size: var(--titulos_maiores); 
+  color: var(--azul_escuro); 
   margin-bottom: 30px; 
   text-align: left; 
 }
 
-/* Parágrafo do texto de introdução */
 .outro-text p {
-  font-size: 1.2rem; 
-  color: #333; 
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
   margin-bottom: 20px; 
   text-align: left; 
 }
 
-/* Botão no texto de introdução (removido) */
 .outro-text .btn {
-  display: none; /* Oculta o botão */
+  display: none; 
 }
 
-/* Hover do botão (removido) */
 .outro-text .btn:hover {
   background-color: #333366; 
 }
 
-/* Imagem de introdução */
 .outro-image {
   max-width: 40%; 
   display: flex;
@@ -51,14 +45,12 @@
   position: relative; 
 }
 
-/* Imagem de introdução */
 .outro-image img {
   width: 100%; 
   height: auto; 
   border-radius: 8px; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .outro-banner {
     flex-direction: column; 

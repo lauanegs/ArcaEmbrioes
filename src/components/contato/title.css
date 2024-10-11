@@ -1,4 +1,3 @@
-/* Container principal */
 .container {
     width: 100%;
     display: flex;
@@ -7,12 +6,10 @@
     align-items: center;
 }
 
-/* Container para o título */
 .container-title {
     width: 100%;
 }
 
-/* Estilo do título principal */
 .title {
     color: var(--azul_escuro); 
     font-size: var(--titulos_maiores); 
@@ -21,12 +18,10 @@
     font-family: var(--montserrat); 
 }
 
-/* Container para o subtítulo */
 .container-subtitle {
     width: 50%;
 }
 
-/* Estilo do subtítulo */
 .subtitle {
     color: var(--quase_preto); 
     font-size: var(--paragrafos); 

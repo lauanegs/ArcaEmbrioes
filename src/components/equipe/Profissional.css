@@ -5,7 +5,6 @@
   flex-wrap: wrap;
 }
 
-/* Estilo para o parágrafo do profissional */
 .profissional p {
   font-size: 1rem; 
   color: var(--azul-escuro); 
@@ -17,7 +16,6 @@
   font-family: var(--montserrat); 
 }
 
-/* Estilo do cartão profissional */
 .profissional-card {
   border-radius: 8px;
   padding: 20px 40px; 
@@ -30,7 +28,6 @@
   background-color: var(--cinza-claro);
 }
 
-/* Imagem do cartão profissional */
 .profissional-card img {
   width: 100%;
   height: auto;
@@ -38,7 +35,6 @@
   margin-bottom: 15px;
 }
 
-/* Estilo do título dentro do cartão profissional */
 .profissional-card h3 {
   font-size: 1.2rem; 
   color: var(--azul-escuro); 
@@ -46,7 +42,6 @@
   font-family: var(--montserrat); 
 }
 
-/* Estilo para a descrição do profissional */
 .profissional-description {
   font-size: 0.9rem;
   color: var(--cinza-escuro); 

@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../../assets/2021.jpg';
+import logoImg from '../../assets/equipamento.jpg';
 import './texto.css';
 
 const OutroBanner = () => {
@@ -7,7 +7,6 @@ const OutroBanner = () => {
     <section className="outro-banner">
       <div className="outro-image">
         <img src={logoImg} alt="Logo" />
-        {/* Card removido */}
       </div>
       <div className="outro-text">
         <p>Localizado no município de Patos de Minas, Minas Gerais, 

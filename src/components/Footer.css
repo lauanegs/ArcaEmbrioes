@@ -1,37 +1,37 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centraliza verticalmente os itens no footer */
+  align-items: center;
   padding: 20px;
   background-color: #1A154B;
-  color: #FFFFFF; /* Define a cor do texto como branca */
+  color: #FFFFFF;
   position: relative;
-  overflow: hidden; /* Garante que nada saia da área definida */
-  min-height: 400px; /* Ajusta a altura mínima do footer */
+  overflow: hidden;
+  min-height: 400px;
 }
 
 .footer-left, .footer-right {
-  flex: 1; /* Garante que ambos os lados tenham tamanhos iguais */
-  z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
+  flex: 1;
+  z-index: 1;
 }
 
 .footer-left {
   padding: 20px;
-  text-align: left; /* Alinha textos à esquerda */
-  margin-left: 80px; /* Ajusta a margem à esquerda para posicionar o texto */
+  text-align: left;
+  margin-left: 80px;
 }
 
 .footer-left h2 {
-  color: #FFFFFF; /* Define a cor do texto como branca */
-  margin: 0; /* Remove margens padrão */
+  color: #FFFFFF;
+  margin: 0;
   font-size: 2rem;
-  font-family: var(--montserrat); /* Usando a variável */
+  font-family: var(--montserrat);
 }
 
 .footer-left p {
-  color: #FFFFFF; /* Define a cor do texto como branca */
-  margin: 0; /* Remove margens padrão */
-  font-family: var(--montserrat); /* Usando a variável */
+  color: #FFFFFF;
+  margin: 0;
+  font-family: var(--montserrat);
 }
 
 .contact-info {
@@ -45,116 +45,113 @@
 }
 
 .contact-item svg {
-  color: #FFFFFF; /* Cor dos ícones no footer-left */
+  color: #FFFFFF;
 }
 
 .contact-item p {
   margin-left: 10px;
-  color: #FFFFFF; /* Define a cor do texto como branca */
-  font-family: var(--montserrat); /* Usando a variável */
+  color: #FFFFFF;
+  font-family: var(--montserrat);
 }
 
-/* Estilos para a parte direita do rodapé */
 .footer-right {
   padding: 20px;
-  color: #ffffff; /* Cor do texto na parte direita */
-  text-align: center; /* Centraliza o texto horizontalmente */
+  color: #ffffff;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-right h2 {
-  color: #ffffff; /* Cor do título */
-  font-size: 1.5rem; /* Tamanho da fonte do título */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-  font-family: var(--montserrat); /* Usando a variável */
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: var(--montserrat);
 }
 
 .footer-right p {
-  color: #ffffff; /* Cor do texto */
-  font-size: 1rem; /* Tamanho da fonte do texto */
-  margin-bottom: 12px; /* Espaçamento abaixo do parágrafo */
-  font-family: var(--montserrat); /* Usando a variável */
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-family: var(--montserrat);
 }
 
 .footer-right .btn {
-  background-color: #ffffff; /* Cor de fundo padrão */
-  color: #1A154B; /* Cor da escrita padrão */
-  padding: 12px 24px; 
-  text-decoration: none; 
-  border-radius: 8px; 
-  transition: background-color 0.3s, transform 0.3s; 
-  display: inline-block; 
-  font-size: 1rem; 
-  font-weight: 600; 
-  font-family: var(--montserrat); 
+  background-color: #ffffff;
+  color: #1A154B;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--montserrat);
 }
 
 .footer-right .btn:hover {
-  background-color: #1A154B; /* Cor de fundo ao passar o mouse */
-  color: #ffffff; /* Cor da escrita ao passar o mouse */
-  transform: translateY(-2px); 
+  background-color: #1A154B;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Container da imagem de fundo */
 .footer-banner {
   position: absolute;
-  right: 0; /* Posiciona a imagem na borda direita */
+  right: 0;
   bottom: 0;
-  width: 70%; /* Ajusta a largura da imagem para 70% */
-  height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
+  width: 70%;
+  height: 100%;
   overflow: hidden;
-  z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */
-  transition: opacity 0.5s ease; /* Adiciona transição suave para a opacidade */
+  z-index: 0;
+  transition: opacity 0.5s ease;
 }
 
 .footer-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
-  opacity: 1; /* Reduz a opacidade da imagem para não competir com o texto */
+  object-fit: cover;
+  opacity: 1;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    min-height: 300px; /* Ajusta a altura mínima */
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
   }
 
   .footer-left, .footer-right {
-    margin-left: 0; /* Remove a margem à esquerda */
-    text-align: center; /* Centraliza o texto */
+    margin-left: 0;
+    text-align: center;
   }
 
   .footer-left h2 {
-    font-size: 1.5rem; /* Reduz o tamanho do título */
+    font-size: 1.5rem;
   }
 
   .footer-left p,
   .footer-right p {
-    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    font-size: 0.9rem;
   }
 
   .footer-banner {
-    opacity: 0; /* Oculta a imagem */
+    opacity: 0;
   }
 }
 
 @media (max-width: 480px) {
   .footer-left h2 {
-    font-size: 1.2rem; /* Tamanho ainda menor do título */
+    font-size: 1.2rem;
   }
 
   .footer-right h2 {
-    font-size: 1.2rem; /* Tamanho ainda menor do título */
+    font-size: 1.2rem;
   }
 
   .footer-left p,
   .footer-right p {
-    font-size: 0.8rem; /* Tamanho ainda menor do texto */
+    font-size: 0.8rem;
   }
 }
