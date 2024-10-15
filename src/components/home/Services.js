@@ -10,15 +10,15 @@ const Services = () => {
       <div className="card-container">
         <div className="card">
           <FaFlask size={35} color="#1A154B" />
-          <h3>Produção in vitro</h3>
+          <p>Aspiração folicular</p>
         </div>
         <div className="card">
           <FaSyringe size={35} color="#1A154B" />
-          <h3>Aspiração folicular</h3>
+          <p>Produção in vitro de embriões frescos/vitrificados</p>
         </div>
         <div className="card">
           <FaTransgender size={35} color="#1A154B" />
-          <h3>Transferência de embriões</h3>
+          <p>Transferência de embriões</p>
         </div>
       </div>
     </section>

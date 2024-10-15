@@ -12,15 +12,17 @@ export const Contatos = () => {
                     <FaMapLocationDot size="60px" className="icon" />
                     <h3>Endereço</h3>
                 </div>
-                <p className="nome-contato">Avenida Aldo Borges Leão, Km 5, S/N. Zona rural de Uberlândia-MG,
-                    <br/> saída para o Prata-MG (MG-497), próximo ao Oleoduto.</p>
+                <p className="nome-contato">R. José Alves Coelho, 454 - Loja 1 - Aurélio Caixeta, <br/>
+                Patos de Minas - MG, 38702-070
+                
+                </p>
             </div>
             <div className="contato ">
                 <div className="header-contato">
                     <MdEmail size="60px" className="icon" />
                     <h3>E-mail</h3>
                 </div>
-                <p className="nome-contato">embriovita@ embriovita.com.br</p>
+                <p className="nome-contato">arca@gmail.com.br</p>
             </div>
             <div className="contato">
                 <div className="header-contato">
@@ -37,7 +39,7 @@ export const Contatos = () => {
                     <BsTelephoneFill size="60px" className="icon" />
                     <h3>Telefone</h3>
                 </div>
-                <p className="nome-contato">(34) 99260-1603</p>
+                <p className="nome-contato">(34) 99194-6309</p>
             </div>
         </div>
     )

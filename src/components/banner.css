@@ -1,0 +1,90 @@
+.banner {
+  position: relative; 
+  background-image: url('../assets/bannerSobre.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 21, 75, 0.5); 
+  z-index: 1; 
+}
+
+.banner > * {
+  position: relative;
+  z-index: 2; 
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner {
+    background-size: cover;
+    background-position: top center; 
+  }
+}
+
+.banner h1 {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: var(--montserrat); 
+}
+
+.banner p {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-family: var(--montserrat); 
+}
+
+.banner button {
+  margin: 1.2rem;
+  height: 48px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--montserrat); 
+}

@@ -1,35 +1,37 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centraliza verticalmente os itens no footer */
+  align-items: center;
   padding: 20px;
   background-color: #1A154B;
-  color: #FFFFFF; /* Define a cor do texto como branca */
+  color: #FFFFFF;
   position: relative;
-  overflow: hidden; /* Garante que nada saia da área definida */
-  min-height: 500px; /* Ajusta a altura mínima do footer (aumente o valor conforme necessário) */
+  overflow: hidden;
+  min-height: 400px;
 }
 
 .footer-left, .footer-right {
-  flex: 1; /* Garante que ambos os lados tenham tamanhos iguais */
-  z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
+  flex: 1;
+  z-index: 1;
 }
 
 .footer-left {
   padding: 20px;
-  text-align: left; /* Alinha textos à esquerda */
-  margin-left: 80px; /* Ajusta a margem à esquerda para posicionar o texto */
+  text-align: left;
+  margin-left: 80px;
 }
 
 .footer-left h2 {
-  color: #FFFFFF; /* Define a cor do texto como branca */
-  margin: 0; /* Remove margens padrão */
+  color: #FFFFFF;
+  margin: 0;
   font-size: 2rem;
+  font-family: var(--montserrat);
 }
 
 .footer-left p {
-  color: #FFFFFF; /* Define a cor do texto como branca */
-  margin: 0; /* Remove margens padrão */
+  color: #FFFFFF;
+  margin: 0;
+  font-family: var(--montserrat);
 }
 
 .contact-info {
@@ -43,69 +45,113 @@
 }
 
 .contact-item svg {
-  color: #FFFFFF; /* Cor dos ícones no footer-left */
+  color: #FFFFFF;
 }
 
 .contact-item p {
   margin-left: 10px;
-  color: #FFFFFF; /* Define a cor do texto como branca */
+  color: #FFFFFF;
+  font-family: var(--montserrat);
 }
 
-/* Estilos para a parte direita do rodapé */
 .footer-right {
   padding: 20px;
-  color: #ffffff; /* Cor do texto na parte direita */
-  text-align: center; /* Centraliza o texto horizontalmente */
+  color: #ffffff;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-right h2 {
-  color: #ffffff; /* Cor do título */
-  font-size: 1.5rem; /* Tamanho da fonte do título */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: var(--montserrat);
 }
 
 .footer-right p {
-  color: #ffffff; /* Cor do texto */
-  font-size: 1rem; /* Tamanho da fonte do texto */
-  margin-bottom: 2px; /* Espaçamento abaixo do parágrafo */
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-family: var(--montserrat);
 }
 
 .footer-right .btn {
   background-color: #ffffff;
   color: #1A154B;
-  padding: 12px 24px; /* Aumenta o padding para um botão mais visível */
+  padding: 12px 24px;
   text-decoration: none;
-  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
   display: inline-block;
-  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
-  font-weight: 600; /* Aumenta o peso da fonte para mais destaque */
-  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--montserrat);
 }
 
 .footer-right .btn:hover {
-  background-color: #333366;
-  transform: translateY(-2px); /* Adiciona um efeito de elevação no hover */
+  background-color: #1A154B;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Container da imagem de fundo */
 .footer-banner {
   position: absolute;
-  right: 0; /* Posiciona a imagem na borda direita */
+  right: 0;
   bottom: 0;
-  width: 70%; /* Ajusta a largura da imagem para 80% */
-  height: 100%; /* Mantém a altura da imagem igual à altura do rodapé */
+  width: 70%;
+  height: 100%;
   overflow: hidden;
-  z-index: 0; /* Coloca a imagem atrás do conteúdo do rodapé */
+  z-index: 0;
+  transition: opacity 0.5s ease;
 }
 
 .footer-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
-  opacity: 1; /* Reduz a opacidade da imagem para não competir com o texto */
+  object-fit: cover;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  .footer-left, .footer-right {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    font-size: 0.9rem;
+  }
+
+  .footer-banner {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    font-size: 0.8rem;
+  }
 }

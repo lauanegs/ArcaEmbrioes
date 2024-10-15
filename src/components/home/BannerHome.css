@@ -4,67 +4,81 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%; /* Usa toda a largura da tela */
+  width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/** RESPONSIVIDADE BANNER SOBRE **/
+.banner-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 21, 75, 0.5); 
+}
 
-/* Para telas grandes (acima de 1200px) */
+.banner-home > * {
+  position: relative;
+  z-index: 2; 
+}
+
+.logo-container {
+  text-align: center; 
+  margin: 20px; 
+}
+
+.logo-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
 @media (min-width: 1200px) {
   .banner-home {
     background-size: cover;
   }
 }
 
-/* Para telas de desktop padrão (entre 992px e 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner-home {
     background-size: cover;
   }
 }
 
-/* Para tablets (entre 768px e 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-home {
     background-size: cover;
   }
 }
 
-/* Para dispositivos móveis grandes (entre 576px e 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
   .banner-home {
     background-size: cover;
   }
 }
 
-/* Para dispositivos móveis pequenos (até 575px) */
 @media (max-width: 575px) {
   .banner-home {
     background-size: cover;
-    background-position: top center; /* Ajustar se necessário */
+    background-position: top center; 
   }
 }
 
-/** FIM RESPONSIVIDADE BANNER SOBRE **/
-
-.banner-home h1{
-  justify-content: center;
-  align-items: center;
+.banner-home h1 {
   padding: 5px;
-  color:white;
+  color: var(--branco); 
   font-weight: bold;
-  font-size: 5rem;
-  
+  font-size: var(--titulos_maiores); 
+  font-family: var(--montserrat);
 }
 
-.banner-home p{
+.banner-home p {
   text-align: center;
-  font-size: 1rem;
-  color: white;
+  font-size: var(--titulos); 
+  color: var(--branco); 
 }
 
 .banner-home button {
@@ -72,9 +86,9 @@
   height: 48px;
   width: 250px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--branco); 
   border-radius: 12px;
-  color: white;
-  font-size: 20px;
+  color: var(--branco); 
+  font-size: var(--paragrafos); 
   font-weight: 400;
 }

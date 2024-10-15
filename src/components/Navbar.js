@@ -7,6 +7,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [iconColor, setIconColor] = useState('#FFFFFF'); // Cor padrão dos ícones
   let scrollTimeout = null;
   let lastScrollTop = 0;
 
@@ -20,9 +21,13 @@ const Navbar = () => {
       // Sempre exibir a navbar no topo
       setVisible(true);
       setScrolled(false); // Não aplicar o estilo "scrolled" no topo
+      setIconColor('#FFFFFF'); // Cor dos ícones no topo
     } else {
       // Mostrar a navbar quando houver rolagem
       setVisible(true);
+
+      // Atualizar a cor dos ícones com base na rolagem
+      setIconColor(currentScroll > 50 ? '#1A154B' : '#FFFFFF');
 
       // Ocultar a navbar após um tempo de inatividade
       if (scrollTimeout) clearTimeout(scrollTimeout);
@@ -59,10 +64,10 @@ const Navbar = () => {
       </ul>
       <div className="social-icons">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook size={24} className="social-icon" />
+          <FaFacebook size={24} color={iconColor} className="social-icon" />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={24} className="social-icon" />
+          <FaInstagram size={24} color={iconColor} className="social-icon" />
         </a>
       </div>
     </nav>

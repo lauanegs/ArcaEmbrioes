@@ -1,16 +1,15 @@
 import React from 'react';
-import logoImg from '../../assets/2021.jpg';
 import './IntroBanner.css';
 
-const IntroBanner = () => {
+const IntroBanner = ({ title, description, imageSrc }) => {
   return (
     <section className="intro-banner">
       <div className="intro-text">
-        <h1>A melhor empresa para cuidar do seu material genético!</h1>
-        <p>Contamos com equipamentos modernos, em um local totalmente esterilizado permitindo os melhores resultados.</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </div>
       <div className="intro-image">
-        <img src={logoImg} alt="Logo" />
+        <img src={imageSrc} alt="Banner" />
       </div>
     </section>
   );

@@ -1,12 +1,13 @@
 import React from 'react';
 import './BannerHome.css';
+import logo from '../../assets/logot.png';
 
 const BannerHome = () => {
   return (
     <div className='banner-home'>
-      <h1>Melhoramento genético com o melhor atendimento e resultado do mercado</h1>
-      <p>A Arca Embriões está sempre atendendo com excelência seus parceiros de Patos de Minas e região.</p>
-      <button>Saiba mais</button>
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo-image" />
+      </div>
     </div>
 
   );

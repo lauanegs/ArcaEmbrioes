@@ -6,26 +6,37 @@
 }
 
 .profissional p {
-  font-size: 1rem; /* Tamanho do subtítulo */
-  color: #1A154B; /* Cor do subtítulo */
-  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
-  max-width: 800px; /* Limita a largura do subtítulo */
-  margin-left: auto; /* Centraliza o subtítulo horizontalmente */
-  margin-right: auto; /* Centraliza o subtítulo horizontalmente */
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
   text-align: center;
+  font-family: var(--montserrat); 
+}
+
+.profissional h2 {
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 20px; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  font-family: var(--montserrat); 
 }
 
 .profissional-card {
   border-radius: 8px;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 20px 40px; 
   width: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--cinza-claro);
 }
 
 .profissional-card img {
@@ -36,12 +47,14 @@
 }
 
 .profissional-card h3 {
-  font-size: 1.2rem;
-  color: #1A154B;
+  font-size: 1.2rem; 
+  color: var(--azul-escuro); 
   margin-bottom: 5px;
+  font-family: var(--montserrat); 
 }
 
 .profissional-description {
   font-size: 0.9rem;
-  color: #666666;
+  color: var(--cinza-escuro); 
+  font-family: var(--montserrat); 
 }

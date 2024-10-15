@@ -1,66 +1,68 @@
-/* Estilo para a seção principal */
 .structure {
-  padding: 40px 20px; /* Padding para a seção */
-  background-color: #f5f5f5; /* Cor de fundo suave */
-  text-align: center; /* Alinha o texto ao centro */
+  padding: 40px 20px; 
+  background-color: var(--cinza-claro); 
+  text-align: center; 
 }
 
-/* Título da seção */
 .structure h2 {
-  font-size: 2rem; /* Tamanho do título principal */
-  color: #1A154B; /* Cor do título */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 10px; 
+  font-family: var(--montserrat); 
 }
 
-/* Subtítulo da seção */
 .structure-subtitle {
-  font-size: 1rem; /* Tamanho do subtítulo */
-  color: #1A154B; /* Cor do subtítulo */
-  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
-  max-width: 800px; /* Limita a largura do subtítulo */
-  margin-left: auto; /* Centraliza o subtítulo horizontalmente */
-  margin-right: auto; /* Centraliza o subtítulo horizontalmente */
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px;
+  margin-left: auto; 
+  margin-right: auto; 
+  font-family: var(--montserrat); 
 }
 
-/* Estilos para o container dos cartões */
 .structure-card-container {
   display: flex;
-  justify-content: center; /* Centraliza os cartões horizontalmente */
-  gap: 20px; /* Espaçamento entre os cartões */
-  flex-wrap: wrap; /* Permite que os cartões se movam para a linha seguinte em telas menores */
+  justify-content: center; 
 }
 
-/* Estilos para cada cartão */
 .structure-card {
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 15px; /* Espaçamento interno dos cartões */
-  width: 210px; /* Largura dos cartões */
-  text-align: center; /* Alinha o texto ao centro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
-  background-color: #FFFFFF; /* Cor de fundo dos cartões */
   display: flex;
-  flex-direction: column; /* Layout dos itens dentro do cartão */
-  align-items: center; /* Centraliza itens horizontalmente dentro do cartão */
-  justify-content: center; /* Centraliza itens verticalmente dentro do cartão */
+  align-items: center;
+  background-color: var(--branco); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 0; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  overflow: hidden; 
 }
 
-/* Estilo para imagens dentro dos cartões */
-.structure-card img {
-  width: 100%; /* Ajusta a largura da imagem para ocupar o espaço disponível */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
-  margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+.structure-card-image {
+  width: 50%; 
+  height: auto; 
+  border-radius: 8px 0 0 8px; 
+  margin-right: 0; 
+  position: relative; 
+  left: 0; 
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
-/* Títulos dentro dos cartões */
-.structure-card h3 {
-  font-size: 1.2rem; /* Tamanho da fonte do título */
-  color: #1A154B; /* Cor do título */
-  margin-bottom: 5px; /* Espaçamento abaixo do título */
+.structure-card-content {
+  text-align: center; 
+  padding: 20px; 
 }
 
-/* Descrição dentro dos cartões */
+.structure-card-content h3 {
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 10px; 
+  font-family: var(--montserrat); 
+}
+
 .structure-description {
-  font-size: 0.9rem; /* Tamanho da fonte da descrição */
-  color: #666666; /* Cor da descrição */
+  font-size: var(--paragrafos); 
+  color: #666666; 
+  font-family: var(--montserrat); 
 }

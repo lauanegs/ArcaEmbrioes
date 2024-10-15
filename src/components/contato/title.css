@@ -1,5 +1,3 @@
-
-
 .container {
     width: 100%;
     display: flex;
@@ -8,23 +6,25 @@
     align-items: center;
 }
 
-.container-title{
+.container-title {
     width: 100%;
 }
 
 .title {
-    color: #fff;
-    font-size: 4.2rem;
+    color: var(--azul_escuro); 
+    font-size: var(--titulos_maiores); 
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: var(--montserrat); 
 }
 
-.container-subtitle{
+.container-subtitle {
     width: 50%;
 }
 
 .subtitle {
-    color: #000;
-    font-size: 1rem;
+    color: var(--quase_preto); 
+    font-size: var(--paragrafos); 
     text-align: center;
+    font-family: var(--montserrat); 
 }
