@@ -19,7 +19,7 @@ export const Formulario = () => {
         };
 
         // Enviando os dados via fetch
-        fetch('http://localhost/ArcaEmbrioes/utils/email.php', {
+        fetch('http://localhost/ArcaEmbrioes/email.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

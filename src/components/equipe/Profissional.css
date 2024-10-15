@@ -6,7 +6,18 @@
 }
 
 .profissional p {
-  font-size: 1rem; 
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  font-family: var(--montserrat); 
+}
+
+.profissional h2 {
+  font-size: var(--titulos); 
   color: var(--azul-escuro); 
   margin-bottom: 20px; 
   max-width: 800px; 

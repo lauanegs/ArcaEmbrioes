@@ -1,5 +1,5 @@
 
-.outro-banner {
+.intro-banner {
   display: flex;
   align-items: center; 
   justify-content: space-between; 
@@ -9,35 +9,35 @@
   flex-wrap: wrap; 
 }
 
-.outro-text {
+.intro-text {
   max-width: 35%; 
   text-align: center; 
   margin-bottom: 20px; 
 }
 
-.outro-text h1 {
+.intro-text h1 {
   font-size: var(--titulos_maiores); 
   color: var(--azul_escuro); 
   margin-bottom: 30px; 
   text-align: left; 
 }
 
-.outro-text p {
+.intro-text p {
   font-size: var(--paragrafos); 
   color: var(--quase_preto); 
   margin-bottom: 20px; 
   text-align: left; 
 }
 
-.outro-text .btn {
+.intro-text .btn {
   display: none; 
 }
 
-.outro-text .btn:hover {
+.intro-text .btn:hover {
   background-color: #333366; 
 }
 
-.outro-image {
+.intro-image {
   max-width: 40%; 
   display: flex;
   justify-content: center; 
@@ -45,35 +45,35 @@
   position: relative; 
 }
 
-.outro-image img {
+.intro-image img {
   width: 100%; 
   height: auto; 
   border-radius: 8px; 
 }
 
 @media (max-width: 768px) {
-  .outro-banner {
+  .intro-banner {
     flex-direction: column; 
     text-align: center; 
   }
   
-  .outro-text {
+  .intro-text {
     max-width: 100%; 
     margin-bottom: 20px; 
   }
   
-  .outro-image {
+  .intro-image {
     max-width: 80%; 
   }
   
 }
 
 @media (max-width: 480px) {
-  .outro-text h1 {
+  .intro-text h1 {
     font-size: 2rem; 
   }
   
-  .outro-text p {
+  .intro-text p {
     font-size: 1rem; 
   }
   

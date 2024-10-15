@@ -26,13 +26,13 @@
 }
 
 .navbar.scrolled .nav-links a,
-.navbar.scrolled .social-icons a img {
-  color: #1A154B;
+.navbar.scrolled .social-icons a {
+  color: #1A154B; /* Alterar a cor das links e ícones no estado "scrolled" */
 }
 
 .navbar .nav-links a,
-.navbar .social-icons a img {
-  color: #FFFFFF;
+.navbar .social-icons a {
+  color: #FFFFFF; /* Cor padrão das links e ícones */
 }
 
 .logo img {
@@ -76,15 +76,6 @@
   transform: scale(1.2);
 }
 
-.social-icons a img {
-  height: 24px;
-  transition: filter 0.3s ease;
-}
-
-.navbar.scrolled .social-icons a img {
-  filter: brightness(1);
-}
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -114,7 +105,7 @@
   }
 
   .social-icons {
-    display: none;
+    display: none; /* Esconder os ícones nas telas menores */
   }
 }
 
@@ -125,9 +116,5 @@
 
   .nav-links a {
     font-size: 12px;
-  }
-
-  .social-icons a img {
-    height: 20px;
   }
 }
