@@ -1,5 +1,5 @@
 .structure {
-  padding: 40px 20px; 
+  padding: 40px 0;
   background-color: var(--cinza-claro); 
   text-align: center; 
 }
@@ -21,48 +21,47 @@
   font-family: var(--montserrat); 
 }
 
-.structure-card-container {
-  display: flex;
-  justify-content: center; 
+.structure-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
 }
 
-.structure-card {
+.structure-carousel-item {
   display: flex;
-  align-items: center;
-  background-color: var(--branco); 
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  padding: 0; 
-  max-width: 800px; 
-  margin: 0 auto; 
-  overflow: hidden; 
+  justify-content: center;
 }
 
-.structure-card-image {
-  width: 50%; 
-  height: auto; 
-  border-radius: 8px 0 0 8px; 
-  margin-right: 0; 
-  position: relative; 
-  left: 0; 
+.structure-carousel-image {
+  width: 100%;
+  height: 400px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
-.structure-card-content {
-  text-align: center; 
-  padding: 20px; 
+.slick-center .structure-carousel-image {
+  transform: scale(1.2); 
+  box-shadow: 
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 50px rgba(255, 255, 255, 0.5);
+  filter: blur(0); 
+  opacity: 1; 
 }
 
-.structure-card-content h3 {
-  font-size: var(--titulos); 
-  color: var(--azul-escuro); 
-  margin-bottom: 10px; 
-  font-family: var(--montserrat); 
+
+.slick-slide:not(.slick-center) .structure-carousel-image {
+  transform: scale(0.8); 
+  filter: blur(4px); 
+  opacity: 0.6; 
 }
 
-.structure-description {
-  font-size: var(--paragrafos); 
-  color: #666666; 
-  font-family: var(--montserrat); 
+.slick-dots li button:before {
+  font-size: 12px;
+  color: var(--azul-escuro);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--azul-claro);
 }

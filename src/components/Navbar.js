@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
+import logoEsc from '../assets/logoesc.png';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -53,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${visible ? 'visible' : ''}`}>
       <div className="logo">
-        <img src={logo} alt="Logo Arca Embriões" />
+        <img src={scrolled ? logoEsc : logo} alt="Logo Arca Embriões" />
       </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
@@ -66,7 +67,7 @@ const Navbar = () => {
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook size={24} color={iconColor} className="social-icon" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/arcaembrioes/" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={24} color={iconColor} className="social-icon" />
         </a>
       </div>

@@ -5,7 +5,6 @@ import IntroBanner from '../components/home/IntroBanner';
 import Services from '../components/home/Services';
 import Structure from '../components/home/Structure';
 import ContactBanner from '../components/ContactBanner';
-import Advantages from '../components/home/Advantages';
 import Pride from '../components/home/Pride';
 
 const Home = () => {
@@ -26,7 +25,6 @@ const Home = () => {
         title={contactTitle} 
         link={contactLink} 
       />
-      <Advantages />
       <Pride />
     </div>
   );

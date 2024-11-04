@@ -11,7 +11,7 @@ const Contato = () => {
     setCssVariables();
   }, []);
 
-  const bannerTitle = "A Arca Embriões está de portas abertas para te atender.";
+  const bannerTitle = "Entre em contato!";
   const bannerDescription = "Nossa equipe está preparada para oferecer os melhores serviços em melhoramento genético de bovinos. Conte conosco! ";
 
   return (

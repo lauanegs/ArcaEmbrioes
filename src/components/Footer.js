@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import bannerImage from '../assets/footer.png';
+import bannerImage from '../assets/footer1.png';
 
 const Footer = () => {
   return (

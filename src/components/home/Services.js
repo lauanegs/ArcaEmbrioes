@@ -1,6 +1,10 @@
 import React from 'react';
 import { FaFlask, FaSyringe, FaTransgender } from 'react-icons/fa';
 import './Services.css';
+import icone1 from '../../assets/1.png';
+import icone2 from '../../assets/2.png';
+import icone3 from '../../assets/3.png';
+import icone4 from '../../assets/4.png';
 
 const Services = () => {
   return (
@@ -9,16 +13,20 @@ const Services = () => {
       <p className="services-subtitle">A Arca Embriões permite acelerar o melhoramento genético de seus parceiros por meio da técnica de fertilização in vitro em bovinos!</p>
       <div className="card-container">
         <div className="card">
-          <FaFlask size={35} color="#1A154B" />
+          <img src={icone1} />
           <p>Aspiração folicular</p>
         </div>
         <div className="card">
-          <FaSyringe size={35} color="#1A154B" />
-          <p>Produção in vitro de embriões frescos/vitrificados</p>
+          <img src={icone2} />
+          <p>FIV</p>
         </div>
         <div className="card">
-          <FaTransgender size={35} color="#1A154B" />
+          <img src={icone3} />
           <p>Transferência de embriões</p>
+        </div>
+        <div className="card">
+          <img src={icone4} />
+          <p>Venda de embriões</p>
         </div>
       </div>
     </section>
