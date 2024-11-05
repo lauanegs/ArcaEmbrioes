@@ -10,7 +10,9 @@ const Services = () => {
   return (
     <section className="services">
       <h2>O que nós fazemos</h2>
-      <p className="services-subtitle">A Arca Embriões permite acelerar o melhoramento genético de seus parceiros por meio da técnica de fertilização in vitro em bovinos!</p>
+      <p className="services-subtitle">Somos especializados na produção de embriões bovinos via fertilização in 
+        vitro (FIV), com foco em melhoramento genético e aumento da produtividade. 
+        Oferecemos soluções personalizadas para maximizar o potencial do seu rebanho.</p>
       <div className="card-container">
         <div className="card">
           <img src={icone1} />

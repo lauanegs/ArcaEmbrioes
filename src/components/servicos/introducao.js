@@ -3,7 +3,12 @@ import './introducao.css';
 
 export const Introducao = () => {
     const title = "Serviços fornecidos";
-    const subTitle = "A qualidade dos nossos serviços leva a resultados, sempre acompanhados de um excelente atendimento. ";
+    const subTitle = (
+        <>
+          Quando a qualidade é a prioridade, os resultados falam por si <br />
+          - estamos aqui para garantir que você veja a diferença.
+        </>
+      );
 
     return (
         <div className="container1">

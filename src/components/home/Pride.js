@@ -8,7 +8,7 @@ const Pride = () => {
       <div className="pride-text">
         <h1>Nosso orgulho!!</h1>
         <p>
-          Resultados incomparáveis.
+          Comprometidos com a excelência.
         </p>
       </div>
       <div className="pride-video">

@@ -15,25 +15,18 @@ const Navbar = () => {
   const handleScroll = () => {
     const currentScroll = window.scrollY;
 
-    // Mostrar a navbar quando houver rolagem
     setScrolled(currentScroll > 50);
 
     if (currentScroll === 0) {
-      // Sempre exibir a navbar no topo
       setVisible(true);
       setScrolled(false); // Não aplicar o estilo "scrolled" no topo
       setIconColor('#FFFFFF'); // Cor dos ícones no topo
     } else {
-      // Mostrar a navbar quando houver rolagem
       setVisible(true);
-
-      // Atualizar a cor dos ícones com base na rolagem
       setIconColor(currentScroll > 50 ? '#1A154B' : '#FFFFFF');
 
-      // Ocultar a navbar após um tempo de inatividade
       if (scrollTimeout) clearTimeout(scrollTimeout);
 
-      // Se o usuário estiver rolando para cima ou estiver no topo
       if (currentScroll < lastScrollTop || currentScroll === 0) {
         setVisible(true);
       } else {
@@ -46,6 +39,11 @@ const Navbar = () => {
     lastScrollTop = currentScroll;
   };
 
+  // Função para rolar rapidamente até o topo da página
+  const scrollToTop = () => {
+    window.scrollTo(0, 0); // Rolagem instantânea para o topo
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -53,18 +51,18 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${visible ? 'visible' : ''}`}>
-      <div className="logo">
+      <div className="logo" onClick={scrollToTop}>
         <img src={scrolled ? logoEsc : logo} alt="Logo Arca Embriões" />
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/sobre">Sobre Nós</Link></li>
-        <li><Link to="/equipe">Equipe</Link></li>
-        <li><Link to="/servicos">Serviços</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
+        <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+        <li><Link to="/sobre" onClick={scrollToTop}>Sobre Nós</Link></li>
+        <li><Link to="/equipe" onClick={scrollToTop}>Equipe</Link></li>
+        <li><Link to="/servicos" onClick={scrollToTop}>Serviços</Link></li>
+        <li><Link to="/contato" onClick={scrollToTop}>Contato</Link></li>
       </ul>
       <div className="social-icons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/profile.php?id=100071313504184" target="_blank" rel="noopener noreferrer">
           <FaFacebook size={24} color={iconColor} className="social-icon" />
         </a>
         <a href="https://www.instagram.com/arcaembrioes/" target="_blank" rel="noopener noreferrer">

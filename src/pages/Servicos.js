@@ -8,7 +8,7 @@ import priImg from '../assets/sincronizacao.jpg';
 import segImg from '../assets/aspiracao.jpg';
 import terImg from '../assets/producao.jpg';
 import quaImg from '../assets/transferencia.jpg';
-import bannerImage from '../assets/bannerSobre.jpg';
+import bannerImage from '../assets/producao.jpg';
 
 const Servicos = () => {
   useEffect(() => {
@@ -20,12 +20,12 @@ const Servicos = () => {
 
   const title1 = "Seleção de receptoras e Sincronização hormonal";
   const description1 = "As receptoras, popularmente conhecidas por “barriga de aluguel”, são avaliadas quanto a sua condição corporal.";
-  const title2 ="Seleção de doadoras e Aspiração folicular guiada por ultrassom (OPU - ovum pick up)";
+  const title2 ="Seleção de doadoras e Aspiração folicular guiada por ultrassom";
   const description2 = "As doadoras são avaliadas quanto sua condição corporal, nutricional e hormonal e estrutura anatômica do aparelho reprodutivo utilizando um ultrassom.";
-  const title3 ="Produção in vitro de embriões (PIVE)";
+  const title3 ="Fertilização in vitro de embriões (FIV)";
   const description3 = "Essa etapa é realizada no laboratório e se inicia com a chegada dos oócitos imaturos previamente selecionados. Esses oócitos são submetidos a uma etapa de maturação in vitro (MIV) por 22-24h.";
-  const title4 ="Inovulação de embriões";
-  const description4 = "Os embriões envasados são levados para implantação nas receptoras.";
+  const title4 ="Transferência de embriões";
+  const description4 = "Os embriões são levados para implantação nas receptoras.";
 
 
   return (

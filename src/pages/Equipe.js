@@ -4,7 +4,7 @@ import ContactBanner from '../components/ContactBanner';
 import IntroEquipe from '../components/equipe/IntroEquipe';
 import React, { useEffect } from 'react';
 import { setCssVariables } from '../utils/Constantes'; 
-import bannerImage from '../assets/bannerSobre.jpg';
+import bannerImage from '../assets/sincronizacao.jpg';
 
 const Equipe = () => {
   useEffect(() => {

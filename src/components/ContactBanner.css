@@ -4,14 +4,14 @@
   background: url('../assets/equipe.jpg') no-repeat center center;
   background-size: cover;
   color: #FFFFFF;
-  height: 50vh;
+  height: 50vh; /* Você pode ajustar a altura se necessário */
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   box-shadow: inset 0 0 0 1000px rgba(26, 21, 75, 0.5);
   text-align: left;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .contact > div {
@@ -19,18 +19,18 @@
 }
 
 .contact h2 {
-  font-size: 3rem;
+  font-size: 3rem; /* Tamanho grande para telas grandes */
   margin-bottom: 20px;
   color: #FFFFFF;
   max-width: 40%;
-  font-family: var(--montserrat); 
+  font-family: var(--montserrat);
 }
 
 .contact p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Tamanho de fonte padrão */
   margin-bottom: 20px;
   color: #FFFFFF;
-  font-family: var(--montserrat); 
+  font-family: var(--montserrat);
 }
 
 .contact-buttons1 {
@@ -39,20 +39,66 @@
 }
 
 .contact-buttons1 .btn {
-  background-color: #1A154B; 
-  color: #ffffff; 
-  padding: 12px 24px; 
-  text-decoration: none; 
-  border-radius: 8px; 
-  transition: background-color 0.3s, transform 0.3s; 
-  display: inline-block; 
-  font-size: 1rem; 
-  font-weight: 600; 
-  font-family: var(--montserrat); 
+  background-color: #1A154B;
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--montserrat);
 }
 
 .contact-buttons1 .btn:hover {
-  background-color: #ffffff; 
-  color: #1A154B; 
+  background-color: #ffffff;
+  color: #1A154B;
   transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px; /* Ajustar padding em telas menores */
+    height: auto; /* Deixar a altura automática para melhor adaptação */
+    text-align: center; /* Centralizar texto em telas menores */
+  }
+
+  .contact > div {
+    max-width: 90%; /* Aumentar a largura em telas menores */
+  }
+
+  .contact h2 {
+    font-size: 2.5rem; /* Reduzir tamanho da fonte em telas menores */
+    max-width: 100%; /* Remover limitação de largura */
+  }
+
+  .contact p {
+    font-size: 1rem; /* Reduzir o tamanho da fonte do parágrafo */
+  }
+
+  .contact-buttons1 {
+    flex-direction: column; /* Alinhar botões verticalmente */
+    align-items: center; /* Centralizar os botões */
+  }
+
+  .contact-buttons1 .btn {
+    width: 100%; /* Botões ocupando a largura total em telas menores */
+    padding: 12px; /* Ajustar padding dos botões */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 2rem; /* Tamanho menor em telas muito pequenas */
+  }
+
+  .contact p {
+    font-size: 0.9rem; /* Reduzir ainda mais o tamanho da fonte do parágrafo */
+  }
+
+  .contact-buttons1 .btn {
+    font-size: 0.9rem; /* Ajustar o tamanho da fonte do botão */
+  }
 }

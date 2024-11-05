@@ -22,7 +22,7 @@ export const Contatos = () => {
                     <MdEmail size="60px" className="icon" />
                     <h3>E-mail</h3>
                 </div>
-                <p className="nome-contato">arca@gmail.com.br</p>
+                <p className="nome-contato">arcaembrioes@gmail.com</p>
             </div>
             <div className="contato">
                 <div className="header-contato">
@@ -39,7 +39,7 @@ export const Contatos = () => {
                     <BsTelephoneFill size="60px" className="icon" />
                     <h3>Telefone</h3>
                 </div>
-                <p className="nome-contato">(34) 99194-6309</p>
+                <p className="nome-contato">(34) 9994-7927</p>
             </div>
         </div>
     )
