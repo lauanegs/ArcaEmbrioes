@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaFlask, FaSyringe, FaTransgender } from 'react-icons/fa';
 import './Services.css';
 import icone1 from '../../assets/1.png';
 import icone2 from '../../assets/2.png';

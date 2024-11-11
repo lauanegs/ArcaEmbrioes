@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px; /* Ajuste aqui se necessário */
+  padding: 10px 20px; 
   background-color: rgba(255, 255, 255, 0.0);
   position: fixed;
   width: 100%;
@@ -27,39 +27,39 @@
 
 .navbar.scrolled .nav-links a,
 .navbar.scrolled .social-icons a {
-  color: #1A154B; /* Alterar a cor das links e ícones no estado "scrolled" */
+  color: #1A154B; 
 }
 
 .navbar .nav-links a,
 .navbar .social-icons a {
-  color: #FFFFFF; /* Cor padrão das links e ícones */
+  color: #FFFFFF; 
 }
 
 .logo {
-  display: flex; /* Para centralizar a logo dentro da navbar */
-  align-items: center; /* Para garantir que a logo fique verticalmente centralizada */
-  margin: 0; /* Remover qualquer margem na logo */
-  padding: 0; /* Remover padding se houver */
+  display: flex; 
+  align-items: center; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .logo img {
-  height: 50px; /* Altura padrão da logo */
+  height: 50px; 
   transition: transform 1s ease;
 }
 
 .navbar.scrolled .logo img {
-  transform: scale(0.7); /* Reduzir a escala da logo ao rolar */
+  transform: scale(0.7); 
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   margin: 0;
-  margin-left: auto; /* Isso empurra os links para o final da navbar */
+  margin-left: auto; 
 }
 
 .nav-links li {
-  margin: 0 15px; /* Espaçamento entre os links */
+  margin: 0 15px; 
 }
 
 .nav-links a {
@@ -75,7 +75,7 @@
 }
 
 .social-icons a {
-  margin-left: 10px; /* Espaçamento entre ícones sociais */
+  margin-left: 10px; 
   transition: transform 0.3s ease;
 }
 
@@ -87,11 +87,11 @@
   .navbar {
     flex-direction: column;
     align-items: center;
-    padding: 10px; /* Ajuste aqui se necessário */
+    padding: 10px;
   }
 
   .logo {
-    margin-bottom: 10px; /* Ajuste se necessário */
+    margin-bottom: 10px; 
   }
 
   .nav-links {
@@ -112,13 +112,13 @@
   }
 
   .social-icons {
-    display: none; /* Esconder os ícones nas telas menores */
+    display: none; 
   }
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 40px; /* Altura reduzida da logo em telas pequenas */
+    height: 40px; 
   }
 
   .nav-links a {
