@@ -1,47 +1,74 @@
-.sim {
-    background-image: url('../../assets/laboratorio.png');
+.outro-banner {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px; 
+  background-color: var(--cinza-claro); 
+  position: relative; 
+  flex-wrap: wrap; 
+  margin-left: 20px; 
+  margin-right: 20px; 
 }
 
-.texto p{
-    text-align: justify;
-    font-size: 24px;
+.outro-text {
+  max-width: 35%; 
+  text-align: left; 
+  margin: 0; 
 }
 
-.texto-container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: space-around; /* Coloca texto e imagem ao lado, com espaço entre eles */
-    padding: 20px;
+.outro-text h1 {
+  font-size: var(--titulos-maiores); 
+  color: var(--azul-escuro); 
+  margin-bottom: 20px; 
+  font-family: var(--montserrat);
+}
+
+.outro-text p {
+  font-size: var(--paragrafos); 
+  color: var(--cinza-escuro); 
+  margin-bottom: 20px; 
+  font-family: var(--montserrat);
+}
+
+.outro-image {
+  width: 500px; 
+  height: auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 100px; 
+}
+
+.outro-image img {
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+  .outro-banner {
+    flex-direction: column; 
+    text-align: center; 
   }
   
-.texto {
-    flex: 1;
-    text-align: left; /* Mantém o texto alinhado à esquerda */
-}
-  
-.imagem {
-    flex: 1;
-    max-width: 50%; /* Limita a largura da imagem em telas grandes */
-    padding: 0;
-}
-  
-  /* Para telas menores */
-  @media (max-width: 768px) {
-    .texto-container {
-      flex-direction: column; /* Coloca o texto e a imagem em coluna (um abaixo do outro) */
-      align-items: center; /* Centraliza o container do texto */
-    }
-  
-    .texto {
-      text-align: justify; /* Mantém o texto alinhado à esquerda */
-      margin-bottom: 20px; /* Adiciona espaço abaixo do texto antes da imagem */
-      padding: 5px;
-      width: 100%; /* Ocupa toda a largura disponível */
-    }
-  
-    .imagem {
-      width: 100%; /* Faz a imagem ocupar toda a largura da tela em dispositivos menores */
-      max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
-    }
+  .outro-text {
+    max-width: 100%; 
+    margin-bottom: 20px; 
   }
   
+  .outro-image {
+    max-width: 80%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .outro-text h1 {
+    font-size: 2rem; 
+  }
+  
+  .outro-text p {
+    font-size: var(--paragrafos); 
+  }
+}

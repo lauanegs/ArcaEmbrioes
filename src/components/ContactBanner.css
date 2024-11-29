@@ -1,0 +1,104 @@
+.contact {
+  position: relative;
+  padding: 20px 40px;
+  background: url('../assets/equipe.jpg') no-repeat center center;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 60vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1000px rgba(26, 21, 75, 0.5);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact > div {
+  max-width: 60%;
+}
+
+.contact h2 {
+  font-size: 3rem; 
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  max-width: 40%;
+  font-family: var(--montserrat);
+}
+
+.contact p {
+  font-size: 1.2rem; 
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-family: var(--montserrat);
+}
+
+.contact-buttons1 {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-buttons1 .btn {
+  background-color: #1A154B;
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+
+.contact-buttons1 .btn:hover {
+  background-color: #ffffff;
+  color: #1A154B;
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px; 
+    height: auto; 
+    text-align: center; 
+  }
+
+  .contact > div {
+    max-width: 90%; 
+  }
+
+  .contact h2 {
+    font-size: 2.5rem; 
+    max-width: 100%; 
+  }
+
+  .contact p {
+    font-size: 1rem; 
+  }
+
+  .contact-buttons1 {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .contact-buttons1 .btn {
+    width: 100%; 
+    padding: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 2rem; 
+  }
+
+  .contact p {
+    font-size: 0.9rem; 
+  }
+
+  .contact-buttons1 .btn {
+    font-size: 0.9rem; 
+  }
+}

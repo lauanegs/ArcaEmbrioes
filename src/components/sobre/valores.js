@@ -1,24 +1,34 @@
-import './valores.css'
-import CardValores from './card-valores';
+import './valores.css';
 
 const Valores = () => {
     return (
         <>
-        <h1>Nossos valores</h1>
-        <p>Somos gratos a todos que estão conosco nessa jornada. O crescimento da empresa é fruto de um trabalho conjunto, nosso e dos parceiros que nos escolhem como prestadora de serviço.</p>
-        <div className='lista-cards'>
-            <CardValores titulo="Titulo" texto="Texto"/>
-            <CardValores titulo="Titulo" texto="Texto"/>
-            <CardValores titulo="Titulo" texto="Texto"/>
-
-            <CardValores titulo="Titulo" texto="Texto"/>
-            <CardValores titulo="Titulo" texto="Texto"/>
-            <CardValores titulo="Titulo" texto="Texto"/>
-
-        </div>
+            
+            <div className='lista-cards'>
+                <div className='coluna'>
+                    <h2>Valores</h2>
+                    <p>
+                        Honestidade<br />
+                        Transparência<br />
+                        Credibilidade<br />
+                        Qualidade<br />
+                        Valorização de pessoas<br />
+                        Comprometimento
+                    </p>
+                </div>
+                <div className='separator'></div>
+                <div className='coluna'>
+                    <h2>Missão</h2>
+                    <p>Fornecer produtos e serviço individualizado de qualidade, sempre utilizando os melhores padrões da biotecnologia animal, garantindo a máxima satisfação dos nossos clientes.</p>
+                </div>
+                <div className='separator'></div>
+                <div className='coluna'>
+                    <h2>Visão</h2>
+                    <p>Ser referência na área de fertilização in vitro de bovinos, criar uma rede consolidada de clientes e contribuir de uma forma eficiente para o crescimento dos mesmos, a fim de perpetuar a empresa.</p>
+                </div>
+            </div>
         </>
-    )
+    );
 }
-
 
 export default Valores;

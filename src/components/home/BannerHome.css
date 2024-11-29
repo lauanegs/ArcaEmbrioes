@@ -1,0 +1,94 @@
+.banner-home {
+  background-image: url('../../assets/pasto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 21, 75, 0.5); 
+}
+
+.banner-home > * {
+  position: relative;
+  z-index: 2; 
+}
+
+.logo-container {
+  text-align: center; 
+  margin: 20px; 
+}
+
+.logo-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (min-width: 1200px) {
+  .banner-home {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-home {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-home {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-home {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-home {
+    background-size: cover;
+    background-position: top center; 
+  }
+}
+
+.banner-home h1 {
+  padding: 5px;
+  color: var(--branco); 
+  font-weight: bold;
+  font-size: var(--titulos_maiores); 
+  font-family: var(--montserrat);
+}
+
+.banner-home p {
+  text-align: center;
+  font-size: var(--titulos); 
+  color: var(--branco); 
+}
+
+.banner-home button {
+  margin: 1.2rem;
+  height: 48px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid var(--branco); 
+  border-radius: 12px;
+  color: var(--branco); 
+  font-size: var(--paragrafos); 
+  font-weight: 400;
+}

@@ -1,0 +1,93 @@
+.container-contatos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+    z-index: 1000;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-family: var(--montserrat);
+    color: var(--cinza-escuro);
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contato p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.contato:hover {
+    background-color: var(--azul_escuro);
+    color: #FFFFFF;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 768px) {
+    .container-contatos {
+        padding: 15px;
+        gap: 20px; /* Reduz espaço entre itens */
+    }
+
+    .contato {
+        width: calc(50% - 10px); /* Divide em 2 colunas */
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .contato p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .nome-contato {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    .container-contatos {
+        gap: 15px; /* Reduz ainda mais o espaço entre itens */
+        padding: 10px;
+    }
+
+    .contato {
+        width: 100%; /* Cada item ocupa toda a largura */
+        height: 180px;
+    }
+
+    .contato p {
+        font-size: 0.85rem; /* Texto ligeiramente menor */
+        margin: 5px 0;
+    }
+
+    .nome-contato {
+        font-size: 1rem;
+    }
+
+    .icon {
+        font-size: 1.3rem; /* Ícones menores */
+    }
+}

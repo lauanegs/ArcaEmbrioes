@@ -1,0 +1,137 @@
+.structure {
+  padding: 40px 80px;
+  background-color: var(--cinza-claro); 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.structure h2 {
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 10px; 
+  font-family: var(--montserrat); 
+}
+
+.structure-subtitle {
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px;
+  margin-left: auto; 
+  margin-right: auto; 
+  font-family: var(--montserrat); 
+}
+
+.structure-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.structure-carousel-item {
+  display: flex;
+  justify-content: center;
+  outline-style: none;
+  outline-color: var(--cinza-claro);
+}
+
+.structure-carousel-image {
+  width: 100%;
+  height: 400px;
+  aspect-ratio: 1 / 1.5;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.slick-center .structure-carousel-image {
+  transform: scale(1.2); 
+  box-shadow: 
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 50px rgba(255, 255, 255, 0.5);
+  filter: blur(0); 
+  opacity: 1; 
+  outline-style: none;
+  outline-color: var(--cinza-claro);
+}
+
+.slick-slide:not(.slick-center) .structure-carousel-image {
+  transform: scale(0.8); 
+  filter: blur(4px); 
+  opacity: 0.6; 
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: var(--azul-escuro);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--azul-claro);
+}
+
+.structure-carousel-image:focus {
+  outline: none;
+  outline-style: none;
+  outline-color: var(--cinza-claro);
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 991px) {
+  .structure {
+    padding: 30px 40px; /* Reduz espaço interno */
+  }
+
+  .structure h2 {
+    font-size: 1.8rem; /* Reduz tamanho do título */
+  }
+
+  .structure-subtitle {
+    font-size: 1rem; /* Ajusta subtítulo */
+    max-width: 600px; /* Reduz largura máxima */
+  }
+
+  .structure-carousel-image {
+    height: 300px; /* Ajusta altura da imagem */
+  }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .structure {
+    padding: 20px; /* Reduz ainda mais o espaço interno */
+  }
+
+  .structure h2 {
+    font-size: 1.5rem; /* Diminui tamanho do título */
+  }
+
+  .structure-subtitle {
+    font-size: 0.9rem; /* Ajusta subtítulo */
+    max-width: 90%; /* Largura proporcional */
+  }
+
+  .structure-carousel-image {
+    height: 250px; /* Ajusta altura da imagem */
+  }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+  .structure h2 {
+    font-size: 1.2rem; /* Título mais compacto */
+  }
+
+  .structure-subtitle {
+    font-size: 0.8rem; /* Subtítulo menor */
+    max-width: 100%; /* O texto ocupa toda a largura */
+  }
+
+  .structure-carousel-image {
+    height: 200px; /* Reduz altura da imagem */
+  }
+
+  .slick-center .structure-carousel-image {
+    transform: scale(1.1); /* Ajusta zoom para telas menores */
+  }
+}

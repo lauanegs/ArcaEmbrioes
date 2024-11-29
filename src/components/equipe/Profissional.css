@@ -1,0 +1,58 @@
+.profissional-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profissional p {
+  font-size: var(--paragrafos); 
+  color: var(--quase_preto); 
+  margin-bottom: 20px; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  font-family: var(--montserrat); 
+}
+
+.profissional h2 {
+  font-size: var(--titulos); 
+  color: var(--azul-escuro); 
+  margin-bottom: 20px; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  font-family: var(--montserrat); 
+}
+
+.profissional-card {
+  border-radius: 8px;
+  padding: 20px 40px; 
+  width: 380px;
+  text-align: center;
+  background-color: var(--cinza-claro);
+}
+
+.profissional-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
+}
+
+.profissional-card h3 {
+  font-size: 1.2rem; 
+  color: var(--azul-escuro); 
+  margin-bottom: 5px;
+  font-family: var(--montserrat); 
+}
+
+.profissional-description {
+  font-size: 0.9rem;
+  color: var(--cinza-escuro); 
+  font-family: var(--montserrat); 
+}
