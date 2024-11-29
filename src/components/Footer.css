@@ -32,6 +32,7 @@
   color: #FFFFFF;
   margin: 0;
   font-family: var(--montserrat);
+  text-align: left;
 }
 
 .contact-info {

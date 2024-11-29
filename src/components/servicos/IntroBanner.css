@@ -32,8 +32,7 @@
   max-width: 40%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  position: relative;
+  align-items: center; 
 }
 
 .intro-image img {

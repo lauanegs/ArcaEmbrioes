@@ -26,7 +26,6 @@
   width: 100%;
   overflow: hidden;
   padding: 0;
- 
 }
 
 .structure-carousel-item {
@@ -75,4 +74,64 @@
   outline: none;
   outline-style: none;
   outline-color: var(--cinza-claro);
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 991px) {
+  .structure {
+    padding: 30px 40px; /* Reduz espaço interno */
+  }
+
+  .structure h2 {
+    font-size: 1.8rem; /* Reduz tamanho do título */
+  }
+
+  .structure-subtitle {
+    font-size: 1rem; /* Ajusta subtítulo */
+    max-width: 600px; /* Reduz largura máxima */
+  }
+
+  .structure-carousel-image {
+    height: 300px; /* Ajusta altura da imagem */
+  }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .structure {
+    padding: 20px; /* Reduz ainda mais o espaço interno */
+  }
+
+  .structure h2 {
+    font-size: 1.5rem; /* Diminui tamanho do título */
+  }
+
+  .structure-subtitle {
+    font-size: 0.9rem; /* Ajusta subtítulo */
+    max-width: 90%; /* Largura proporcional */
+  }
+
+  .structure-carousel-image {
+    height: 250px; /* Ajusta altura da imagem */
+  }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+  .structure h2 {
+    font-size: 1.2rem; /* Título mais compacto */
+  }
+
+  .structure-subtitle {
+    font-size: 0.8rem; /* Subtítulo menor */
+    max-width: 100%; /* O texto ocupa toda a largura */
+  }
+
+  .structure-carousel-image {
+    height: 200px; /* Reduz altura da imagem */
+  }
+
+  .slick-center .structure-carousel-image {
+    transform: scale(1.1); /* Ajusta zoom para telas menores */
+  }
 }
