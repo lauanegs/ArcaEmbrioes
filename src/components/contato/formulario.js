@@ -18,7 +18,6 @@ export const Formulario = () => {
             message: mensagem,
         };
 
-        // Enviando os dados via fetch
         fetch('http://localhost/ArcaEmbrioes/email.php', {
             method: 'POST',
             headers: {
@@ -87,7 +86,7 @@ export const Formulario = () => {
                 />
             </div>
             <button className="btn-form" type="submit">Enviar</button>
-            {/* Exibe o status de envio do formulário */}
+
             {status && <p className="status-message">{status}</p>}
         </form>
     );

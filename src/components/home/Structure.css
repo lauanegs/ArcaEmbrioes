@@ -26,17 +26,20 @@
   width: 100%;
   overflow: hidden;
   padding: 0;
+ 
 }
 
 .structure-carousel-item {
   display: flex;
   justify-content: center;
+  outline-style: none;
+  outline-color: var(--cinza-claro);
 }
 
 .structure-carousel-image {
   width: 100%;
   height: 400px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1.5;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -49,8 +52,9 @@
     0 0 50px rgba(255, 255, 255, 0.5);
   filter: blur(0); 
   opacity: 1; 
+  outline-style: none;
+  outline-color: var(--cinza-claro);
 }
-
 
 .slick-slide:not(.slick-center) .structure-carousel-image {
   transform: scale(0.8); 
@@ -65,4 +69,10 @@
 
 .slick-dots li.slick-active button:before {
   color: var(--azul-claro);
+}
+
+.structure-carousel-image:focus {
+  outline: none;
+  outline-style: none;
+  outline-color: var(--cinza-claro);
 }

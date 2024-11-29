@@ -30,12 +30,8 @@
 .profissional-card {
   border-radius: 8px;
   padding: 20px 40px; 
-  width: 280px;
+  width: 380px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: var(--cinza-claro);
 }
 
@@ -44,6 +40,8 @@
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
 }
 
 .profissional-card h3 {

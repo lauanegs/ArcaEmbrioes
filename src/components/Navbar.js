@@ -8,7 +8,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [iconColor, setIconColor] = useState('#FFFFFF'); // Cor padrão dos ícones
+  const [iconColor, setIconColor] = useState('#FFFFFF');
   let scrollTimeout = null;
   let lastScrollTop = 0;
 
@@ -19,8 +19,8 @@ const Navbar = () => {
 
     if (currentScroll === 0) {
       setVisible(true);
-      setScrolled(false); // Não aplicar o estilo "scrolled" no topo
-      setIconColor('#FFFFFF'); // Cor dos ícones no topo
+      setScrolled(false); 
+      setIconColor('#FFFFFF'); 
     } else {
       setVisible(true);
       setIconColor(currentScroll > 50 ? '#1A154B' : '#FFFFFF');
@@ -32,16 +32,15 @@ const Navbar = () => {
       } else {
         scrollTimeout = setTimeout(() => {
           setVisible(false);
-        }, 1500); // Tempo de espera antes de esconder a navbar
+        }, 1500); 
       }
     }
 
     lastScrollTop = currentScroll;
   };
 
-  // Função para rolar rapidamente até o topo da página
   const scrollToTop = () => {
-    window.scrollTo(0, 0); // Rolagem instantânea para o topo
+    window.scrollTo(0, 0); 
   };
 
   useEffect(() => {

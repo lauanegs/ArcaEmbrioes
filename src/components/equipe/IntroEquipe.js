@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../../assets/equipamento.jpg';
+import logoImg from '../../assets/equipe.png';
 import './IntroEquipe.css';
 
 const IntroEquipe = () => {
